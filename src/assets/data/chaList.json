@@ -1,0 +1,39 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+    "total": 3
+  },
+  "beans":[{
+    "mktgChnlId":"01",
+    "mktgChnlNm":"厂商",
+    "mktgChnlDesc":"渠道描述",
+    "chnlRspderNm":"王五",
+    "chnlRspderTelnum":"18735692457",
+    "crtUserId":"wangruu786734",
+    "crtUserNm":"孙权",
+    "crtTime":"2015-03-23",
+    "validStsCd":"1"
+  }, {
+    "mktgChnlId":"01",
+    "mktgChnlNm":"厂商",
+    "mktgChnlDesc":"渠道描述",
+    "chnlRspderNm":"章程",
+    "chnlRspderTelnum":"18335642452",
+    "crtUserId":"dsdf56767",
+    "crtUserNm":"宋金",
+    "crtTime":"2015-02-20",
+    "validStsCd":"1"
+   }, {
+    "mktgChnlId":"02",
+    "mktgChnlNm":"微信",
+    "mktgChnlDesc":"渠道描述",
+    "chnlRspderNm":"王涛",
+    "chnlRspderTelnum":"18335642452",
+    "crtUserId":"dsdf56767",
+    "crtUserNm":"秦凯",
+    "crtTime":"2015-02-20",
+    "validStsCd":"1"
+  }
+  ]
+}

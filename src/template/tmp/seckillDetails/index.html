@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, minimu-scale=1.0, maximum-scale=1.0, userscalable=no">
+    <title>限时秒杀</title>
+    <style>
+        @media screen and (min-width: 1080px) { html, body { font-size: 34px !important; } }
+        @media screen and (min-width: 721px) and (max-width: 1079px) { html, body { font-size: 26px !important; } }
+        @media screen and (min-width: 640px) and (max-width: 720px) { html, body { font-size: 24px !important; } }
+        @media screen and (min-width: 540px) and (max-width: 639px) { html, body { font-size: 20px !important; } }
+        @media screen and (min-width: 480px) and (max-width: 539px) { html, body { font-size: 16px !important; } }
+        @media screen and (min-width: 320px) and (max-width: 479px) { html, body { font-size: 14px !important; } }
+        /* reset */
+        *{margin: 0;padding: 0; box-sizing: content-box}
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: none; font-size: 100%; font: inherit; vertical-align: baseline; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: none; }
+        .clearfix{display:inline-table;zoom:1;_height:1%;}
+        .clearfix:after{content:".";display:block;font-size:0;line-height:0;height:0;clear:both;visibility:hidden}
+        body { font-family:"Microsoft YaHei", Helvetica, "Hiragino Sans GB","STHeiti"; color: #333; margin-bottom:3.5rem}
+        .group_banner{font-size:0;}
+        .group_price{height:3.6rem; background:#ffeae9;}
+        .group_price ul{width: 100%}
+        .group_price ul li{float:left; height:3.6rem; list-style: none}
+        .group_price ul li:first-child{width:65%; background-image:-webkit-linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);background-image:-moz-linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);background-image:-o-linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);background-image:linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);}
+        .group_price ul li:first-child p span{padding-left:.8rem;font-size:.8rem;color:#fff;line-height:3.6rem;}
+        .group_price ul li:first-child p span i{font-style:normal; font-size:.75rem;}
+        .group_price ul li:first-child p em{font-size:.75rem;text-decoration:line-through; color:#fff;padding-left:.5rem;}
+        .group_price ul li.ms_price .ms_div_price{width:100%;height:1.8rem;}
+        .group_price ul li.ms_price .ms_div_price p span{line-height:2.1rem;}
+        .group_price ul li.ms_price .ms_div_clock{width:100%;height:1.45rem; }
+        .group_price ul li.ms_price .ms_div_clock .div_clock{float:left;border:solid 1px #fff;-o-border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAIAAAAGHlpnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Qjk4NjcyNDdBQ0E2MTFFNjk5MTZCRUQ4QUQxRERDRTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Qjk4NjcyNDhBQ0E2MTFFNjk5MTZCRUQ4QUQxRERDRTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTg2NzI0NUFDQTYxMUU2OTkxNkJFRDhBRDFERENFNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTg2NzI0NkFDQTYxMUU2OTkxNkJFRDhBRDFERENFNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pul3pcYAAALiSURBVHjapFRZSJRRFP7vvf8y40a5JDiV4RSRjiRZCEW04VJYQVFE+BxhRBJGkvRgENSLpGEEvQSFgiVGQZBNC1SWZIZhmSvu+2g6/TP/em/3NuMsOvVQh5n/4Tv3fOc7555zATExBwH3r0ZmZBiIN9uHPUV35IPVZnNv5NNTbqW0Xs6v1B+0crrpA0FiNO+Pb+5VyhvxkAumJRFMGKQaRNX90TwCUSKHMZmTcf+0UvYQj8yJp3cDq8BYCGEB8s5reOwHv2ujeHYfiLPi7+Nm6wAemKFlAghAYizKSUMOGycgvbZFq/1AVUTVnqIg4/elYfF7N0kVhzmPpl5/arzopCBcE89FS0QzcHOf3tgG01OkklyxNJ+LkbSal2bbYBgFX+CQygupMO+Z++aXEZS5WjiZg7LXcSJiCXomaf1G01flUoO1pkg6n0em3SA+ZrFJvw1PzNOvUvF4Ie2ip/ieOeQi4YZlVb3ppN6fhVWYdoT+3IrPxQUOmZ1jbsdl+cRt6iYRzTCVKyyHVv8xFIZ+MZgYr7s4kZcuFIAVUZFnAEGxJBdl2PRHn8mCNwAvUpiYTC5AexLakhocBI9mOL9RPICAWAvasZ7Fe/VIFLoJNyQHHHh4Vqts8p6rY+pCjKZhMn2zE0rBhoP+eRSkaB82uyaARSAedUk5APmnyX+bfoU8pGNDBl1BR+FmPt9hvOkOlcaSjc+TeS9AcCkF446zGh2jeHQO2lb6QQHReQuToOjG2x5WhcQv6wUE/HY7pdeqnLQvf9pLOqNmSz+flwFipGUUVEfWWrojesMn7dYrLqTUgNHbUW88B8lx/P7M0K4F9XAWQSzeY3aMqNVOujLC8W0o0+Y7SjfYeNKu3X1HZmXL1SMwNSGUOqy37HLf99ERxN2TNBtKT6GCiWrQlcU9U3TfpbIDwrGttEd/o/A9LcazDq2uBfdOsQeJcCAhWjiUJRzNhvZVy5848L8Pn0v+JcAAnO6uODhhbUgAAAAASUVORK5CYII=) no-repeat left top; background-size:1.3rem 1.2rem;font-size:.75rem;color:#fff;padding:0 .4rem 0 1.5rem;margin-left:1rem;}
+        .group_price ul li.ms_price .ms_div_clock p{float: left;}
+        .group_price ul li.ms_price p span{padding-left:.8rem;font-size:1rem;color:#fff;line-height:3.6rem;}
+        .group_price ul li:last-child{width:35%;}
+        .group_price ul li:last-child p:first-child{font-size:.8rem;color:#f23764;padding-top:.2rem;padding-bottom:.2rem;text-align: center;}
+        .group_price ul li:last-child p:last-child{font-size:.8rem; text-align: center;}
+        .group_price ul li:last-child p:last-child span{display:inline-block; width:1.4rem; height:1.7rem; background:#f2315f;color:#fff;font-size:.75rem;text-align:center;line-height:1.7rem; -moz-border-radius:.4rem;-webkit-border-radius:.4rem;-o-border-radius:.4rem;border-radius:.4rem;margin-right:.2rem;}
+        .group_price ul li:last-child p:last-child i{color:#f2315f;font-size:.8rem;}
+        .product_title{background:#fff; padding: .6rem .8rem ;margin-bottom:1rem;}
+        .product_title .product_title_con{font-size:1.1rem;color:#333333;line-height:1.5rem;border-bottom:solid 1px #e9eaee;padding-bottom:.6rem;}
+        .product_title_gz{font-size:.9rem;height:2rem; color:#333;line-height:2em; overflow: hidden; padding-top: .7rem}
+        .product_title_gz span{padding-right:.9rem; color:#7a7d89; font-size:.8rem;}
+        .product_title_gz i{font-style:normal;border:solid 1px #f56767;-o-border-radius:.125rem;-moz-border-radius:.125rem;-webkit-border-radius:.125rem;border-radius:.125rem; font-size:.75rem;color:#f56767;padding:.125rem .3rem;margin-right:.8rem;}
+        .address{background:#fff;border-bottom:solid 1px #d6d6d7;padding:1rem .8rem 1rem .8rem;}
+        .address address{padding-right:.9rem; color:#7a7d89; font-size:.8rem;font-style:normal; }
+        .address address span{font-size:1rem;color:#333;  background-size:1rem 1rem; padding-left:1.2rem;}
+        .group_footer{background:#fff; position:fixed;bottom:0;left:0;width:100%; z-index: 61}
+        .group_footer a,.sk_btn{height:3.5rem;background:#f23030;line-height:3.5rem;color:#fff;font-size:1.25rem;text-align:center;display:block;}
+        /*限时秒杀begain*/
+        .group_detail_title{height:3.5rem;border-top:solid 1px #d6d6d7;border-bottom:solid 1px #d6d6d7;background:#f0f2f5;padding:0  .6rem;position:relative;}
+        .group_detail_title i{position:absolute; z-index:50; width:100%;left: 0;top: 50%;border-bottom:solid 1px #dcdcdc;}
+        .group_detail_title p{ position:absolute; z-index:60;line-height:3.5rem;text-align:center; width:100%;left: 0;top: 0;}
+
+        .group_detail_title p span{font-size:.75rem;color:#031a27;background:#f0f2f5;padding:0 1.7rem;line-height:3.5rem;}
+        .group_detail{background:#fff; margin-top: .8rem}
+        .group_pic_tit{height:2.4rem;border-bottom:solid #dcdcdc 1px;}
+        .group_pic_tit span{height:2.4rem;line-height:2.4rem;font-size:1rem;color:#ff5405;border-bottom:solid 2px #ff5405;padding:0 2.1rem;display:inline-block;}
+        .chose_spec{background:#fff;}
+        .chose_spec_pic{border-bottom:solid 1px #eaecef;padding:0 .75rem;height:4rem;position:relative;background-color: #fff}
+        .chose_spec_pic img{position:absolute;left: .75rem;top:-2rem;border:solid 1px #e2e2e3;-o-border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;width:5rem;height:5rem;background-color: #fff;overflow: hidden}
+        .chose_spec_pic p{font-size:1.1rem;color:#f11c1c;padding-left:6rem;padding-top:1rem;}
+        .chose_spec_class{padding:1rem .8rem .8rem 1rem;}
+        .chose_spec_class .sel-sku{color:#565656;height:1rem;font-size:.875rem;padding-bottom:.8rem;}
+        .chose_spec_class p{}
+        .chose_spec_class p span{font-size:.875rem;color:#555;border:solid 1px #999;padding:.1rem .8rem;-o-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin-right:.6rem;display:inline-block;margin-bottom:.8rem;}
+        .chose_spec_class p span.current{border-color:#f66868;color:#f01414;}
+        .chose_spec_num{padding:0 .8rem;}
+        .chose_spec_num p{float:left;font-size:.875rem;color:#565656;height:1.8rem;line-height:1.8rem;}
+        .chose_spec_num .num_add{float:right;width:6.2rem;height:1.8rem;border:solid 1px #545456;-o-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px; margin-left: .5rem}
+        .chose_spec_num .num_add p span.jian{border-right:solid 1px #545456;display:inline-block;width:1.8rem;height:1.8rem;text-align:center;line-height:1.8rem;}
+        .chose_spec_num .num_add p span.num{font-size:1rem;color:#08080b;width:2.4rem;height:1.8rem;text-align:center;display:inline-block;}
+        .chose_spec_num .num_add p span.add{width:1.8rem;height:1.8rem;line-height:1.8rem;text-align:center;border-left:solid 1px #545456;display:inline-block;}
+        .sk_btn_box{ width: 100%;position: fixed;bottom: 0;}
+        .mt_0{ margin-top: 0}
+        .pt_0{ padding-top: 0}
+        #G_seckill.dis_over{ background-color: #999}
+        .act-over{line-height: 3.6rem;display: block;text-align: center; color: #f23242; font-weight: bold}
+        .res_section{ padding: .8rem .6rem}
+        .resRegion-header{ line-height: 3rem; border-bottom: 1px solid #e0e0e0; color: #555; text-align: center}
+        .resRegion-header span:first-child{ float: left; padding: 0 1rem; color: #999}
+        .resRegion-con li{ list-style-type:  none; line-height: 3rem; font-size: .8rem; border-bottom: 1px solid #e0e0e0}
+        .resRegion-con li span{ padding-left: 1rem}
+        .resRegion-con li.active span{ color: #f15353;}
+        /*.layui-m-layercont{padding: .5rem .2rem !important;}*/
+        @-webkit-keyframes layui-m-anim-left{0%{opacity:0; -webkit-transform:translateX(800px); transform:translateX(800px)} 100%{opacity:1; -webkit-transform:translateX(0); transform:translateX(0)} }@keyframes layui-m-anim-left{0%{opacity:0; -webkit-transform:translateX(800px); transform:translateX(800px)} 100%{opacity:1; -webkit-transform:translateX(0); transform:translateX(0)} }
+        .layui-m-anim-left{-webkit-animation-name:layui-m-anim-left; animation-name:layui-m-anim-left}
+        .res_section img{ width: 98%; height: auto}
+    </style>
+</head>
+<body style="background:#f0f2f5;">
+<input type="hidden" name="cmpgnNm" value="">
+<input type="hidden" name="cmpgnId" value="">
+<input type="hidden" name="mcdsNm" value="">
+<input type="hidden" name="mcdsId" value="">
+<input type="hidden" name="specVal" value="">
+<input type="hidden" name="mcdsUnitId" value="">
+<input type="hidden" name="rsId" value="">
+<input type="hidden" name="rsUnitId" value="">
+
+<header>
+    <div class="group_banner">
+        <img src="" width="100%"/>
+    </div>
+</header>
+<section class="group_price">
+    <ul class="clearfix">
+        <li class="ms_price">
+            <div class="ms_div_price">
+                <p>
+                    <span><i>￥</i><b id="G_price">0.00</b></span>
+                </p>
+            </div>
+            <div class="ms_div_clock clearfix">
+                <div class="div_clock">
+                    限时秒杀
+                </div>
+                <p><em id="G_oldprice">0.00</em></p>
+            </div>
+        </li>
+        <li class="sk_time">
+            <p>距结束还剩:</p>
+            <p>
+                <!--<span class="day">00</span><i>:</i>-->
+                <span class="hour">00</span><i>:</i>
+                <span class="minute">00</span><i>:</i>
+                <span class="second">00</span>
+            </p>
+        </li>
+    </ul>
+</section>
+
+<!-- price end -->
+<section class="product_title sk_line">
+    <p class="product_title_con"></p>
+    <p class="product_title_gz">
+        <span>规则</span>
+        <i>限购</i>
+        每个ID限购1件，超出数量以结算价为准
+    </p>
+</section>
+<section class="product_title open_sku">
+    <p class="product_title_gz pt_0">
+        <span>已选</span>
+        <b id="G_sku"></b>，<b id="G_qty">1</b>个
+    </p>
+</section>
+<section class="address">
+    <address>配送<span id="G_region"></span></address>
+</section>
+<!--<section class="group_detail_title">
+    <i></i>
+    <p><span>继续拖动，查看图文详情</span></p>
+</section>-->
+<section class="group_detail">
+    <div class="group_pic_tit">
+        <span>图文详情</span>
+    </div>
+    <div class="res_section" id="G_res_section"></div>
+</section>
+ <footer class="group_footer">
+    <a id="G_seckill">立即秒杀</a>
+</footer>
+<script src="../../assets/lib/base.min.js" type="text/javascript"></script>
+<script src="../../assets/lib/layer_mobile/layer.js"></script>
+<script src="../../assets/common/util.js" type="text/javascript"></script>
+<script src="js/seckillDetails.js" type="text/javascript"></script>
+</body>
+</html>

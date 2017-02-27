@@ -1,0 +1,71 @@
+{
+  "returnCode":"0",
+  "rtnMsg":"成功",
+  "bean":{
+    "total":"5"
+  },
+  "beans":[
+    {
+      "cmpgnId":"201610261212104567", //活动ID
+      "cmpgnNm":"营销活动名称营销活动名称营销活动名称营销活动名称营销活动名称", //活动名称
+      "cmpgnTypeCd":"01", //营销活动类型
+      "bgnValidTime":"2016-10-26 00:00:00", //开始时间
+      "endValidTime":"2016-10-30 23:59:59", //结束时间
+      "cmpgnStsCd":"03", //活动状态
+      "strtupStsCd":"01" //活动操作
+    },
+    {
+      "cmpgnId":"201610261210104569",
+      "cmpgnNm":"营销活动",
+      "cmpgnTypeCd":"02",
+      "bgnValidTime":"2017-01-26 00:00:00",
+      "endValidTime":"2017-01-30 23:59:59",
+      "cmpgnStsCd":"03",
+      "strtupStsCd":"02" //活动操作
+    },
+    {
+      "cmpgnId":"201610261210104569",
+      "cmpgnNm":"营销活动",
+      "cmpgnTypeCd":"03",
+      "bgnValidTime":"2016-10-26 00:00:00",
+      "endValidTime":"2016-12-30 23:59:59",
+      "cmpgnStsCd":"03",
+      "strtupStsCd":"01" //活动操作
+    },
+    {
+      "cmpgnId":"201610261210104569",
+      "cmpgnNm":"营销活动",
+      "cmpgnTypeCd":"04",
+      "bgnValidTime":"2016-10-26 00:00:00",
+      "endValidTime":"2016-10-30 23:59:59",
+      "cmpgnStsCd":"01",
+      "strtupStsCd":"01" //活动操作
+    },
+    {
+      "cmpgnId":"201610261210104569",
+      "cmpgnNm":"营销活动",
+      "cmpgnTypeCd":"05",
+      "bgnValidTime":"2016-10-26 00:00:00",
+      "endValidTime":"2016-10-30 23:59:59",
+      "cmpgnStsCd":"05",
+      "strtupStsCd":"02" //活动操作
+    },{
+      "cmpgnId":"201610261212104567",
+      "cmpgnNm":"宣传活动20161110",
+      "cmpgnTypeCd":"05",
+      "cmpgnStsCd":"01",
+      "strtupStsCd":"01",
+      "bgnValidTime":"2016-11-26 00:00:00",
+      "endValidTime":"2016-11-30 23:59:59",
+    },{
+      "cmpgnId":"201610261312104567",
+      "cmpgnNm":"抽奖活动20161110",
+      "cmpgnTypeCd":"03",
+      "cmpgnStsCd":"01",
+      "strtupStsCd":"01",
+      "bgnValidTime":"2016-11-26 00:00:00",
+      "endValidTime":"2016-11-30 23:59:59",
+    }
+  ],
+  "object":null
+}

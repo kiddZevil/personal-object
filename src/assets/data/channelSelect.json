@@ -1,0 +1,19 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+
+  },
+  "beans":[{
+    "mktgChnlId":"00",
+    "mktgChnlNm":"85电商"
+  }, {
+    "mktgChnlId":"01",
+    "mktgChnlNm":"厂商"
+   },
+    {
+      "mktgChnlId":"02",
+      "mktgChnlNm":"微信"
+    }
+  ]
+}

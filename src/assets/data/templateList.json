@@ -1,0 +1,40 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+
+  },
+  "beans":[{
+    "tmpltId":"2016111001",
+    "tmpltNm":"过年大团购模板一",
+    "tmpltPicUrlAddr":"src/assets/img/template.png",
+    "tmpltPath":"模板路径",
+    "przitmCnt":"4"
+  },{
+    "tmpltId":"2016111002",
+    "tmpltNm":"过年大团购模板一",
+    "tmpltPicUrlAddr":"src/assets/img/template.png",
+    "tmpltPath":"模板路径",
+    "przitmCnt":"3"
+  },{
+    "tmpltId":"2016111003",
+    "tmpltNm":"过年大团购模板一",
+    "tmpltPicUrlAddr":"src/assets/img/template.png",
+    "tmpltPath":"模板路径",
+    "przitmCnt":"3"
+
+  },{
+    "tmpltId":"2016111004",
+    "tmpltNm":"过年大团购模板一",
+    "tmpltPicUrlAddr":"src/assets/img/template.png",
+    "tmpltPath":"模板路径",
+    "przitmCnt":"5"
+  },{
+    "tmpltId":"2016111005",
+    "tmpltNm":"过年大团购模板一",
+    "tmpltPicUrlAddr":"src/assets/img/template.png",
+    "tmpltPath":"模板路径",
+    "przitmCnt":"6"
+  }
+  ]
+}

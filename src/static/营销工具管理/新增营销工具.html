@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>新增营销工具</title>
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/tablepay.css">
+    <link rel="stylesheet" href="../../assets/css/yuanyan.css">
+    <link rel="stylesheet" href="../../assets/css/zg.css">
+</head>
+<body>
+<!--title begin-->
+<div class="con-title">
+    <p><a href="###">营销工具管理</a><span>&nbsp;&gt;&nbsp;新增营销工具</span></p>
+</div>
+<!--title end-->
+<!--右侧主体内容begin-->
+<div class="wrap_right_con">
+    <div class="all_order add-market-tool">
+        <form class="form-horizontal">
+            <!--组件名称 beg-->
+        <div class="control-group">
+            <div class="control-label">
+                <em class="con-required">*</em>
+                组件名称:
+            </div>
+            <div class="controls">
+                <input type="text" name="component-name">
+            </div>
+            <div class="input-tips clear mt-5">
+                <p>活动名称长度至少3个字符，最长50个汉字</p>
+            </div>
+
+        </div>
+            <!--组件名称 end-->
+            <!--组件描述 beg-->
+        <div class="control-group">
+            <div class="control-label">
+                    <em class="con-required">*</em>
+                    组件描述:
+                </div>
+                <div class="controls" style="width: auto;">
+                    <textarea name="component-desc" id="component-desc" cols="60" rows="5"></textarea>
+                </div>
+            <div id="Jcom-desc_wrapper" class="error-tips fn-hide mt-15">
+                <p id="Jcom-desc" class="error">请输入组件描述</p>
+            </div>
+
+            </div>
+            <!--组件描述 end-->
+            <!--组件图标 beg-->
+        <div class="control-group">
+                <div class="control-label" >
+                    <em class="con-required">*</em>
+                    组件图标:
+                </div>
+                <div class="controls border-0 pd-0" style="width: auto;">
+                    <div class="input-append">
+                        <span class="upload-wrap">
+                            <input type="text" name="upload-input">
+                        </span>
+                        <span class="btn-wrap">
+                            <span style="display: inline-block;">
+                                <input type="submit" name="upload-btn" value="选择上传">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            <div class="input-tips ">
+                <p>选择上传gif/jpg/png格式图片，建议宽度不超过1000像素，高度不超过4000像素如超出范围，请先自行对图片进行裁切处理。</p>
+            </div>
+
+        </div>
+            <!--组件图标 beg-->
+            <!--组件类型beg-->
+        <div class="control-group">
+                <div class="control-label" >
+                    <em class="con-required">*</em>
+                    组件类型:
+                </div>
+                <div class="controls">
+                   办理类
+                </div>
+            </div>
+            <!--组件类型end-->
+            <!--组件状态beg-->
+         <div class="control-group">
+                <div class="control-label " style="padding-top: 7px;">
+                    <em class="con-required">*</em>
+                    组件状态:
+                </div>
+                <div class="controls border-0">
+                    <label class="radio_inline">
+                        <input name="com-status" value="0" checked="checked" type="radio">
+                        启用
+                    </label>
+                    <label class="radio_inline">
+                        <input name="com-status" value="1"  type="radio">
+                        暂停
+                    </label>
+                </div>
+            </div>
+            <!--组件状态end-->
+            <!--是否设置权限 beg-->
+         <div class="control-group">
+                <div class="control-label" style="padding-top: 7px;">
+                    <em class="con-required">*</em>
+                    是否设置权限:
+                </div>
+                <div class="controls border-0">
+                    <label class="radio_inline">
+                        <input name="config-right" value="0" checked="checked" type="radio">
+                        是
+                    </label>
+                    <label class="radio_inline">
+                        <input name="config-right" value="1"  type="radio">
+                        否
+                    </label>
+                </div>
+            </div>
+            <!--是否设置权限 end-->
+            <!--角色设置beg-->
+         <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    角色设置:
+                </div>
+                <div class="controls border-0" style="width: auto;">
+                    <label class="radio_inline">
+                        <input name="config-role" value="0" checked="checked" type="radio">
+                        系统管理员
+                    </label>
+                    <label class="radio_inline">
+                        <input name="config-role" value="1"  type="radio">
+                        渠道管理员
+                    </label>
+                    <label class="radio_inline">
+                        <input name="config-role" value="2"  type="radio">
+                        渠道运营人员
+                    </label>
+                    <label class="radio_inline">
+                        <input name="config-role" value="3"  type="radio">
+                        业务审核人员
+                    </label>
+                </div>
+            </div>
+            <!--角色设置end-->
+
+
+        </form>
+        <div class="btn-box">
+            <a href="javascript:;" class="btn btn-blue">确认</a>
+        </div>
+    </div>
+</div>
+<!--右侧主体内容end-->
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>加载中...-云营销</title>
+	    <style type="text/css">
+			a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:none;vertical-align:baseline;font:inherit;font-size:100%;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;}
+			body{background: #B81F24;position: relative;font-family:Microsoft YaHei,Helvetica,Hiragino Sans GB,STHeiti;}
+			.banner1{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+			.banner1 img{width: 100%;height: 100%;}
+			.group_banner{ font-size: 0;}
+			.group_banner img{ display: block;width: 100%;height: auto;}
+			.ggl{position: relative;width: 85.6%;height: 90px;margin: -5px auto;background: url(img/ggl.png) no-repeat center center;background-size: 100% 100%;margin-top:}
+			.canvas{position:absolute;top:2px;left:2.5%;width:95%;height:82px;line-height:82px;text-align:center;z-index: 2;}
+			.info{position:absolute;top:2px;left:2.5%;width:95%;height:82px;text-align:center;}
+			.info .tip{display: block;font-size : 1rem}
+			.info .btn{ display: initial}
+			#prompt{line-height: 40px;}
+			.btn{position: relative;width: 50%;height: 20px;line-height: 20px;background: #df412b;color: #fff;border-radius: 5px;margin: 0 auto;z-index: 1;}
+			.num{width: 100%;height: 30px;line-height: 30px;text-align: center;font-size:14px;margin-top: 5%;}
+			#ok, #no{display: none;}
+			.pop{position: fixed;left: 0;top: 0;z-index: 3;width: 100%;height: 100%;background: rgba(0,0,0,0.6);display: none;}
+			.pop img{width: 100%;height: auto;overflow: hidden;margin: 15% auto;}
+			.act-rule{ padding: 1rem 2rem; z-index: 2; position: relative}
+			.act-rule .act-rule-tit{ color: #F39C12; font-size: 1rem}
+			.act-rule .act-rule-con{ color: #fff; margin-top: .5rem; line-height: 1.6rem; font-size: .8rem;word-wrap: break-word;white-space: pre-wrap;}
+			.act-rule .act-rule-con p{ font-size: .8rem}
+			.act-rule pre{white-space: pre-wrap;}
+			.act-record{ padding: 2rem 2rem 0 2rem; font-size: .8rem}
+			.act-record span{ color: #fff;}
+			.btn{ padding: .4rem 1rem; font-size: .8rem}
+			.clickTime{ display: inline; font-size: .8rem}
+			.layer-skill-record{position:relative;margin-bottom:0;padding-left:0;list-style:none;background-color:#fff;margin-top: 2.4rem}
+			.layer-skill-record li{position:relative;overflow:hidden;padding:11px 15px;-webkit-touch-callout:none;border-bottom:1px solid #eee}
+			.layer-skill-record li .record-box{position:relative;display:block;overflow:hidden;margin:-11px -15px;padding:inherit;white-space:nowrap;text-overflow:ellipsis;color:inherit}
+			.layer-skill-record .record-btn{float:right;margin-left:.2rem;margin-top:.3rem;padding:.5rem 1rem;border-radius:5px;background-color:#f15352;color:#fff;font-size:.8rem;text-decoration:none}
+			.layer-skill-record .record-info{overflow:hidden}
+			.layer-skill-record .record-info .tit{font-size:1rem}
+			.layer-skill-record .record-info .sku{margin-top:.3rem;font-size:.8rem;color:#999}
+			.txt-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+			.layui-m-layercont{height:100%;overflow: hidden}
+			.layer-skill-record{height:100%;overflow-y:auto}
+			.layer-skill-header{ text-align: center; line-height: 2.8rem; height: 2.8rem; position: fixed; top: 0; width:100% ; border-bottom: 1px solid #eee}
+			.layer-skill-header span{ float: right; padding: 0 1rem}
+			.record-btn.dis{ background-color: #999}
+			.record-box .res-sku{ margin-right: .9rem}
+	    </style>
+	</head>
+	<body style="background: url(img/guaguaka_bg.png)  no-repeat">
+		<input type="hidden" name="chnlId">
+		<input type="hidden" name="skipUrl" value="">
+		<input type="hidden" name="login" value="0">
+		<input type="hidden" name="num" value="0">
+		<input type="hidden" name="move" value="0">
+		<input type="button" id="btn_chick" style="display: none">
+		<header style="overflow:hidden; margin-bottom: 30px">
+			<div class="group_banner">
+				<img src="img/guaguaka_word.png"/>
+			</div>
+		</header>
+		<div class="ggl" id="top">
+			<div class="info" id="prize">
+				<span class="tip" id="prompt"></span>
+				<div class="btn" id="no">
+					再来一次
+					<span id="clickTime" class="clickTime" style="display: none;">
+						(剩余:<b id="clickTimeNum"></b>次)
+					</span>
+				</div>
+			</div>
+			<canvas id="c1" class="canvas"></canvas>
+		</div>
+		<div class="act-rule act-record">
+			<span>查看中奖记录>></span>
+		</div>
+		<div class="act-rule">
+			<h3 class="act-rule-tit">奖品</h3>
+			<div id="G-actPrize" class="act-rule-con"></div>
+		</div>
+		<div class="act-rule" style="padding-top: 0">
+			<h3 class="act-rule-tit">活动规则</h3>
+			<pre id="G-actRule" class="act-rule-con"></pre>
+		</div>
+		<!--<div style="position: relative">
+			测试手机请求：
+			<div id="ajax_load_times">
+
+			</div>
+		</div>-->
+		<script src="../../assets/lib/base.min.js" type="text/javascript"></script>
+		<script src="../../assets/lib/layer_mobile/layer.js"></script>
+		<script src="../../assets/common/util.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script>
+			$(function(){
+				var url = 'front/sh/campaign!activity?uid=mk008'; //抽奖预览接口
+				var id = Util.browser.getParameter('cmpgnId');
+				var se = Util.browser.getParameter('se');
+				var fontem = parseInt(window.getComputedStyle(document.documentElement, null)["font-size"]);//这是为了不同分辨率上配合@media自动调节刮的宽度
+				if(!id){
+					Util.layer.prompt({
+						content : "当前活动未找到",
+						shade: 'background-color: rgba(0,0,0,0.9)',
+						shadeClose: false
+					});
+					return
+				}
+				if(se == '0'){
+					new Card({
+						el : $('#c1')
+						,id : id
+						,num : 4
+						,se:true
+						,loadUrl: url
+						,fontem : fontem
+					})
+					return
+				}
+				if(!Util.act.state(id)){
+					new Card({
+						el : $('#c1')
+						,id : id
+						,fontem : fontem
+					})
+				}else{
+					/*$('.turnplate_box').remove();
+					$('.act-rule').remove();*/
+				}
+
+			})
+		</script>
+			
+	</body>
+
+</html>

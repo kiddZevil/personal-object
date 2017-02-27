@@ -1,0 +1,15 @@
+{
+  "returnCode":"0",
+  "rtnMsg":"成功",
+  "bean":{
+    "userNm":"张三",
+    "srcChnlId":"01",
+    "userLoginPw":"ghsuhsiuhui90",
+    "roleId":"02",
+    "userId":"yxpt9011"
+  },
+  "beans":[{
+  }
+  ],
+  "object":null
+}

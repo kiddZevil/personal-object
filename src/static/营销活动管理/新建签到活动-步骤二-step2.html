@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>新建签到营销活动</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tablepay.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/iconfont/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/zg.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/yxgl-ysg.css"/>
+</head>
+<body>
+    <div class="con-title">
+        <p>
+            新建签到营销活动
+            <!--<a href="javascript:;">权限管理</a>
+            <b>></b>
+            <span>权限编辑</span>-->
+        </p>
+    </div>
+    <div class="wrap_right_con">
+        <div class="all_order fn-clear">
+            <div class="c-article c-step-two">
+                <div class="c-section">
+                    <div class="c-section-header">
+                        <span class="c-section-tit">规则配置</span>
+                        <div class="header-btn-box">
+                            <a href="javascript:;" class="btn btn-blue">添加规则</a>
+                        </div>
+                    </div>
+                    <div class="c-section-con">
+                        <div class="c-section-con">
+                            <div class="sign-rule-list">
+                                <div class="sign-rule-box">
+                                    <h3>
+                                        规则一
+                                        <a href="javascript:;" class="btn btn-link fn-right">删除</a>
+                                    </h3>
+                                    <div class="sign-rule-info">
+                                        <input type="hidden" name="signdTypeCd" value=""> <!--连续签到-->
+                                        <div class="sign-rule-row">
+                                            连续签到
+                                            <input class="sign-input" name="signdDayCnt" type="text"> <!--签到天数-->
+                                            天
+                                        </div>
+                                        <div class="sign-rule-row fn-inline">
+                                            <div class="c-radio">
+                                                <label for="all">
+                                                    <input class="ml-15" id="all" name="takeLmtTypeCd" type="radio" value="" />
+                                                    允许一共领取
+                                                </label>
+                                            </div>
+                                            <input class="sign-input" name="takeLmtQty" type="text"> <!--签到天数-->
+                                            件(库存)
+                                        </div>
+                                        <div class="sign-rule-row fn-inline">
+                                            <div class="c-radio">
+                                                <label for="all">
+                                                    <input class="ml-15" id="all" name="takeLmtTypeCd" type="radio" value="" />
+                                                    允许每天领取
+                                                </label>
+                                            </div>
+                                            <input class="sign-input" name="takeLmtQty" type="text"> <!--签到天数-->
+                                            件(库存)
+                                        </div>
+                                        <div class="sign-rule-goods form-horizontal form-prize">
+                                            <input class="input" type="hidden" name="cmpgnRsId" value="">
+                                            <div class="control-group">
+                                                <label class="control-label">奖品名称：</label>
+                                                <div class="controls">
+                                                    <input class="input" type="text" value="华为 P7">
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label">奖品图片：</label>
+                                                <div class="prize-upload-img">
+                                                    <img src="../../assets/img/pic2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sign-rule-box">
+                                    <h3>
+                                        规则二
+                                        <a href="javascript:;" class="btn btn-link fn-right">删除</a>
+                                    </h3>
+                                    <div class="sign-rule-info">
+                                        <input type="hidden" name="signdTypeCd" value=""> <!--连续签到-->
+                                        <div class="sign-rule-row">
+                                            连续签到
+                                            <input class="sign-input" name="signdDayCnt" type="text"> <!--签到天数-->
+                                            天
+                                        </div>
+                                        <div class="sign-rule-row fn-inline">
+                                            <div class="c-radio">
+                                                <label for="all">
+                                                    <input class="ml-15" id="all" name="takeLmtTypeCd" type="radio" value="" />
+                                                    允许一共领取
+                                                </label>
+                                            </div>
+                                            <input class="sign-input" name="takeLmtQty" type="text"> <!--签到天数-->
+                                            件(库存)
+                                        </div>
+                                        <div class="sign-rule-row fn-inline">
+                                            <div class="c-radio">
+                                                <label for="all">
+                                                    <input class="ml-15" id="all" name="takeLmtTypeCd" type="radio" value="" />
+                                                    允许每天领取
+                                                </label>
+                                            </div>
+                                            <input class="sign-input" name="takeLmtQty" type="text"> <!--签到天数-->
+                                            件(库存)
+                                        </div>
+                                        <a href="javascript:;" class="btn btn-link">添加商品</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-section">
+                    <div class="c-section-header">
+                        <span class="c-section-tit">模版设置</span>
+                    </div>
+                    <div class="c-section-con">
+                        <div class="c-form-group mt-15">
+                            <label>活动描述 <b>*</b> </label>
+                            <textarea class="c-form-control" name="cmpgnRuleCntt"  rows="3" placeholder="请输入活动描述"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-btn-box">
+                    <div>
+                        <a href="javascript:;" class="btn">上一步</a>
+                        <a href="javascript:;" class="btn btn-blue">保存</a>
+                        <a href="javascript:;" class="btn btn-green">发布</a>
+                        <a href="javascript:;" class="btn btn-orange">预览</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

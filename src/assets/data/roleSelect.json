@@ -1,0 +1,23 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+
+  },
+  "beans":[{
+    "roleId":"00",
+    "roleNm":"系统管理员"
+  }, {
+    "roleId":"01",
+    "roleNm":"渠道管理员"
+   },
+    {
+      "roleId":"02",
+      "roleNm":"系统运营人员"
+    },
+    {
+      "roleId":"03",
+      "roleNm":"渠道运营人员"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>中移在线营销活动管理</title>
+    <link rel="stylesheet" type="text/css" href="src/assets/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="src/assets/css/tablepay.css"/>
+    <link rel="stylesheet" type="text/css" href="src/assets/css/zg.css"/>
+    <link rel="stylesheet" type="text/css" href="src/assets/css/yuanyan.css"/>
+
+</head>
+<body id="G-mkLogin">
+<div class="title-con">
+    <div class="see-con">
+        <div class="title-img mr-10">
+        <img src="src/assets/img/tit-logo.png" alt=""/>
+    </div>
+    <div class="title-name">
+        营销活动管理平台
+    </div>
+    </div>  
+</div>
+<div class="login-bg">
+    <div class="see-con fn-clear">
+        <div class="logon-box fn-right mt-40">
+            <h2>登录账户</h2>
+            <form name="login-info" id="login-info" autocomplete="off">
+                <div class="input-box">
+                    <div class="login-input border-box ">
+                        <img class="icon-img" src="src/assets/img/user-bg.png"  alt=""/>
+                        <input class="user-input login-info" type="text" maxlength="20" autocomplete="off"
+                               name="username"
+                               placeholder="请输入用户名">
+                    </div>
+                    <div class="login_warn fn-hide" id="J_username_wrapper">
+                        <p id="J_username" class="error"><span class="con-required">*</span>用户名不能为空</p><!-- <p class="right">您输入的工号可以使用</p> -->
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="login-input border-box">
+                        <img class="icon-img" src="src/assets/img/pas-bg.png"  alt=""/>
+                        <input class="pas-input login-info" id="pas-input" maxlength="20" type="password" autocomplete="off"
+                               name="password" placeholder="请输入密码">
+                    </div>
+                    <div id="J_password_wrapper" class="login_warn fn-hide">
+                        <p id="J_password" class="error"><span class="con-required">*</span>密码不能为空</p>
+                    </div>
+        </div>
+                <div class="input-box">
+                    <div class="login-input border-box code-box">
+                        <img class="icon-img" src="src/assets/img/code-bg.png"  alt=""/>
+                        <input class="code-input login-info" maxlength="4" type="text" name="ncode">
+                        <div class="code-img">
+                            <img id="codeValidateImg" src="" alt=""/>
+                        </div>
+                    </div>
+                    <div id="J_code_wrapper" class="login_warn fn-hide">
+                      <p id="J_code" class="error"><span class="con-required">*</span><span id="login-tips"></span></p>
+                    </div>
+                </div>
+
+                <a href="javascript:;" class="login-btn btn-blue" id="G-login-btn">登录</a>
+            </form>
+        </div>
+
+    </div>
+    <div class="login-footer">
+        <p>中移在线版权所有 豫 B2-20110110</p>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8"  src="src/assets/lib/jquery/jquery.js"></script>
+<script type="text/javascript" charset="utf-8"  src="src/assets/common/des.js"></script>
+<script type="text/javascript" src="src/js/workflow/homepage/login.js"></script>
+</body>
+</html>

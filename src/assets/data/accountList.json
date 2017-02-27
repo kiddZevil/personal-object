@@ -1,0 +1,28 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+    "total": 5
+  },
+  "beans":[{
+    "userId":"yxpt9011",
+    "userNm":"张三",
+    "chnlNm":"电商",
+    "acctTypeCd":"201133",
+    "validStsCd":"1",
+    "lastOneTmsLoginTime":"2016-08-20",
+    "roleNm":"系统运营人员",
+    "crtTime":"2014-03-30"
+
+  }, {
+    "userId":"yxpt9020",
+    "userNm":"李四",
+    "chnlNm":"电商",
+    "acctTypeCd":"201134",
+    "validStsCd":"1",
+    "lastOneTmsLoginTime":"2016-09-20",
+    "roleNm":"系统管理员",
+    "crtTime":"2014-03-30"
+   }
+  ]
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+#footer span, #header h1 { display: inline-block;/* *vertical-align: auto; */*display: inline; zoom: 1; }
+
+.wrapper { width: 100%; }
+
+.wrap-header { background-color: #00A3CF; }
+
+#header { height: 40px; }
+
+.wrap-container { background-color: #fff; }
+
+.wrap-footer { background-color: #333; }
+
+#footer { height: 60px; }
+
+.wrap-header, .wrap-container, .wrap-footer { position: absolute; left: 0; right: 0; }
+
+.wrap-header { top: 0; background-color: #00A3CF; }
+
+#header { height: 40px; }
+
+.wrap-container { top: 40px; bottom: 60px; background-color: #fff; }
+
+.wrap-footer { bottom: 0; background-color: #333; }
+
+#footer { height: 60px; }
+
+.wrap-container { overflow-x: hidden; overflow-y: auto; }
+
+/* 两列，右侧自适应宽度 */
+#container, .layout-rightauto, .layout-rightauto .layout-left, .layout-rightauto .layout-right, .layout-rightauto .layout-rightinner { position: absolute; top: 0; bottom: 0; }
+
+.layout-left, .layout-rightinner { overflow-x: hidden; overflow-y: auto; }
+
+.wrap-container { overflow: hidden; }
+
+#container { width: 100%; }
+
+.layout-rightauto { width: 100%; }
+
+.layout-rightauto .layout-left { left: 0; width: 240px; }
+
+.layout-rightauto .layout-right { right: 0; left: 250px; width: auto; }
+
+.layout-rightauto .layout-rightinner { right: 0; left: 0; }
+
+body, html, h1, ul, ol, li { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+#header, #footer { color: #fff; padding: 0 10px; }
+
+#header { line-height: 40px; }
+
+#footer { line-height: 60px; }
+
+#footer span { float: right; display: inline; height: 60px; color: #51B148; }
+
+#footer a { color: #51B148; text-decoration: none; }
+
+#header h1 { font-size: 18px; }
+
+.example-p { padding: 10px; margin: 0; font-size: 12px; line-height: 720px; background-color: #f5f5f5; }

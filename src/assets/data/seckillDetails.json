@@ -1,0 +1,33 @@
+{
+  "returnCode":"0",
+  "rtnMsg":"成功",
+  "bean":{
+    "mcdsId":"456789",
+    "mcdsNm":"Apple/苹果 iPhone 6s",
+    "mcdsPic":"../../../assets/img/mould_img/one_group.jpg"
+  },
+  "beans":[
+    {
+      "bgnTime":"2016-12-05 14:22:10",
+      "finishTime":"2016-12-05 14:45:30",
+      "lmtpchsFlag":"1",
+      "lmtpchsQty":"2",
+      "specVal":"黑色 32G",
+      "origUprc":"100.00",
+      "pmtUprc":"10.00",
+      "mcdsUnitPic":"../../../assets/img/mould_img/one_group.jpg"
+    },
+    {
+      "bgnTime":"2016-11-29 17:48:46",
+      "finishTime":"2016-12-01 17:48:46",
+      "lmtpchsFlag":"1",
+      "lmtpchsQty":"2",
+      "specVal":"黑色 64G",
+      "origUprc":"300.00",
+      "pmtUprc":"30.00",
+      "mcdsUnitPic":"../../../assets/img/mould_img/one_group.jpg"
+    }
+  ],
+  "object":null
+}
+

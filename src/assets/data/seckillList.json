@@ -1,0 +1,54 @@
+{
+  "busiCode":null,
+  "opId":null,
+  "phone":null,
+  "returnCode":"0",
+  "returnMessage":null,
+  "bean":{
+    "cmpgnNm":"aaa",
+    "cmpgnId":"20161130165027849398",
+    "ftpUrl":"http://192.168.100.4:20500"
+  },
+  "beans":[
+    {
+      "total":"0",
+      "bgnTime":"2016-12-1 16:49:52",
+      "pmtUprc":"33.00",
+      "origUprc":"22.00",
+      "mcdsId":"2016111617444488437",
+      "mcdsPic":"/busisystem/mamp/cmpgn/img/201611251515000011.jpg",
+      "finishTime":"2016-12-20 16:49:52",
+      "mcdsNm":"Apple/苹果 iPhone 8s"
+    },
+    {
+      "total":"10",
+      "bgnTime":"2016-12-3 16:50:05",
+      "pmtUprc":"667.00",
+      "origUprc":"55.00",
+      "mcdsId":"2016111617412689639",
+      "mcdsPic":"img/phone.png",
+      "finishTime":"2016-12-20 16:37:12",
+      "mcdsNm":"Apple/苹果 iPhone 6s"
+    },{
+      "total":"0",
+      "bgnTime":"2016-12-3 16:38:05",
+      "pmtUprc":"667.00",
+      "origUprc":"55.00",
+      "mcdsId":"2016111617412689635",
+      "mcdsPic":"img/phone.png",
+      "finishTime":"2016-12-26 16:50:26",
+      "mcdsNm":"华为 Mate9"
+    },
+    {
+      "total":"20",
+      "bgnTime":"2016-12-1 16:40:53",
+      "pmtUprc":"667.00",
+      "origUprc":"55.00",
+      "mcdsId":"20161116174126896365",
+      "mcdsPic":"img/phone.png",
+      "finishTime":"2016-12-2 10:50:05",
+      "mcdsNm":"华为 P10"
+    }
+  ],
+  "object":null
+}

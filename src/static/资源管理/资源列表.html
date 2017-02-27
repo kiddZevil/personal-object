@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tablepay.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/zg.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/yuanyan.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/iconfont/iconfont.css"/>
+</head>
+<body>
+<div class="z-container border-box">
+    <!--查询条件-->
+    <div class="jf-form columns-4 search_con">
+        <form enctype="multipart/form-data" action="front/sh/resources!index?uid=s001" method="post">
+            <ul class="jf-form-item fn-clear">
+                <li>
+                    <label>资源类型：</label>
+                    <div>
+                        <select name="rsTypeCd" id="">
+                            <option>商品</option>
+                            <option>虚拟商品</option>
+                            <option>优惠券</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label>奖品名称：</label>
+                    <div>
+                        <input name="rsNm" type="text">
+                    </div>
+                </li>
+                <li>
+                    <div style="min-width: 210px">
+                        <a class="btn btn-blue fn-right">新建资源</a>
+                        <a class="btn btn-blue fn-right">搜索</a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+        <div class="sn-list fn-clear mt-15">
+            <table>
+                <thead>
+                    <tr>
+                        <th>资源类型</th>
+                        <th>资源名称</th>
+                        <th>创建时间</th>
+                        <th>数量</th>
+                        <th>剩余</th>
+                        <th>有效期</th>
+                        <th>状态</th>
+                        <th>创建人</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>是</td>
+                    <td></td>
+                    <td>
+                        <a class="text-change-orange mr-5" href="javascript:;">编辑</a>
+                        <a class="text-change-orange mr-5" href="javascript:;">停用</a>
+                        <a class="text-change-orange" href="javascript:;">启用</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>是</td>
+                    <td></td>
+                    <td>
+                        <a class="text-change-orange mr-5" href="javascript:;">编辑</a>
+                        <a class="text-change-orange mr-5" href="javascript:;">停用</a>
+                        <a class="text-change-orange" href="javascript:;">启用</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>是</td>
+                    <td></td>
+                    <td>
+                        <a class="text-change-orange mr-5" href="javascript:;">编辑</a>
+                        <a class="text-change-orange mr-5" href="javascript:;">停用</a>
+                        <a class="text-change-orange" href="javascript:;">启用</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pagination mt-10">
+                <span class="current">上一页</span>
+                <span class="current">1</span>
+                <a href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <span>...</span>
+                <a href="javascript:;" class="next">下一页</a>
+            </div>
+        </div>
+</div>
+</body>
+</html>

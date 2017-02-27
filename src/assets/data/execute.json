@@ -1,0 +1,40 @@
+{
+  "busiCode": null,
+  "opId": null,
+  "phone": null,
+  "returnCode": "0",
+  "returnMessage": null,
+  "bean": {
+    "total": "1",
+    "ftpUrl": "http://192.168.100.4:20500"
+  },
+  "beans": [
+    {
+      "mcdsUnitNm": "lhy商户入驻测试",
+      "brandNm": "申新业配件",
+      "mcdsUnitId": "201606132025242015364",
+      "uprc": "200.00",
+      "prodType": "X004",
+      "crtTime": "2016-06-13 20:25:24",
+      "image60x180": "image/201606132024572275360/201606132024000057-60x108.jpg",
+      "cnspQty": "2",
+      "skuQty": "1001",
+      "mcdsTypeNm": "配件",
+      "validStsCd": "04"
+    },
+    {
+      "mcdsUnitNm": "lhy商户入驻测试",
+      "brandNm": "申新业配件",
+      "mcdsUnitId": "201606132025242015364",
+      "uprc": "200.00",
+      "prodType": "X004",
+      "crtTime": "2016-06-13 20:25:24",
+      "image60x180": "image/201606132024572275360/201606132024000057-60x108.jpg",
+      "cnspQty": "2",
+      "skuQty": "1001",
+      "mcdsTypeNm": "配件",
+      "validStsCd": "04"
+    }
+  ],
+  "object": null
+}

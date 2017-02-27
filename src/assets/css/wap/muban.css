@@ -1,0 +1,99 @@
+/*write by zhaocuicui*/
+/*qiandao style begain*/
+/* fontsize reset */
+@media screen and (min-width: 1080px) { html, body { font-size: 34px !important; } }
+@media screen and (min-width: 721px) and (max-width: 1079px) { html, body { font-size: 26px !important; } }
+@media screen and (min-width: 640px) and (max-width: 720px) { html, body { font-size: 24px !important; } }
+@media screen and (min-width: 540px) and (max-width: 639px) { html, body { font-size: 20px !important; } }
+@media screen and (min-width: 480px) and (max-width: 539px) { html, body { font-size: 16px !important; } }
+@media screen and (min-width: 320px) and (max-width: 479px) { html, body { font-size: 14px !important; } }
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: none; font-size: 100%; font: inherit; vertical-align: baseline; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: none; }
+.clearfix{display:inline-table;zoom:1;_height:1%; width: 100%}
+.clearfix:after{content:".";display:block;font-size:0;line-height:0;height:0;clear:both;visibility:hidden}
+body { font-family:"Microsoft YaHei", Helvetica, "Hiragino Sans GB","STHeiti"; color: #333;}
+.login_banner{padding:0 1rem; font-size:0;position:relative;}
+.login_banner img{margin-top:-1px;}
+.login_con{position:absolute;width:100%; height:100%;}
+.login_banner p{position:absolute;left:15%;bottom:.2rem; z-index:99;font-size:.6rem;color:#fff; height:1.5rem;line-height:1.7rem; width:70%;text-align:center; background:#165f70;}
+.login_banner a{position:absolute;z-index:99;display:block;width:7rem;height:2.5rem;right:1rem;top:1rem;border:solid 1px #fff;}
+.sign_time{padding:0 1rem;}
+.sign_time_con{background:url(../../../assets/mould_img/sign_time.jpg) no-repeat; background-size:100%; height:4rem;}
+.guize{background:url(../../../assets/mould_img/sign_guize.jpg) no-repeat; background-size:100%;}
+.guize div{padding:3rem .5rem 3rem 3rem;}
+.guize div p{color:#163a3b;font-size:1.2rem;line-height:2rem;}
+/*团购多品begain*/
+.group_banner{font-size:0;}
+.group_list{margin-top:1.4rem;padding:0 .2rem 1.5rem .8rem;}
+.group_list h3{text-align:center;font-size:1rem;color:#fff;background:url(../../../assets/mould_img/group_bj1.jpg) no-repeat 45% center; background-size:11.8rem 2rem;height:2rem; line-height:2.8rem; padding:1.4px 0 .8rem 0; overflow:hidden; letter-spacing:.2rem;}
+.group_list ul li{float:left;width:33%;padding-bottom:.625rem;}
+.group_list ul li div{margin-right:.6rem;background:#fff; padding:.6rem;}
+.group_list ul li div p{font-size:.6rem;color:#666; height:1rem; line-height:1rem;overflow:hidden;}
+.group_list ul li div p span{font-size:.3rem;color:#333;}
+.group_list ul li div p em{font-size:.6rem;color:#e43c3e;padding-right:.4rem;}
+.group_list ul li div p i{font-style:normal;color:#666666;font-size:.5rem;text-decoration: line-through;}
+.group_list ul li div a{background:#e43c3e; text-align:center; font-size:.6rem; height:1rem; line-height:1rem; color:#fff;width:100%; display: block;}
+.group_list aside{background:#80d288;-moz-border-radius:.4rem;-webkit-border-radius:.4rem;-webkit-border-radius:.4rem;border-radius:.4rem; padding:1rem;margin-right:.6rem;}
+.group_list aside p{font-size:.6rem;color:#024b09;line-height:1.4rem;}
+.conduct_list{position:relative;padding-top:4.4rem;padding-left:.8rem;padding-right:.8rem;padding-bottom:3rem;}
+.conduct_list .people{position:absolute; z-index:99; left:.5rem;top:0; width:5.2rem;height:11rem; background:url(../../../assets/mould_img/people.png) no-repeat; background-size:5.2rem 11rem;}
+.conduct_list aside{background:#ff4a5b; -o-border-radius:.4rem;-moz-border-radius:.4rem;-webkit-border-radius:.4rem;border-radius:.4rem;padding-left:5.6rem;padding-top:1rem;padding-right:2rem;padding-bottom:1.3rem;}
+.conduct_list aside h3{background:url(../../../assets/mould_img/people_bj.png) no-repeat; background-size:4.5rem 1.8rem; font-size:1.2rem; color:#b53926;height:1.8rem;line-height:1.8rem; text-align:center; width:4.5rem; margin-bottom:.5rem;}
+.conduct_list aside div{background:#fff;padding:.7rem;}
+.conduct_list aside div p{font-size:1rem;color:#333;line-height:1.4rem;}
+/*团购单品begain*/
+.group_price{height:3.6rem; background:#ffeae9;}
+.group_price ul li{float:left; height:3.6rem;}
+.group_price ul li:first-child{width:70%; background-image:-webkit-linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);background-image:-moz-linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);background-image:-o-linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);background-image:linear-gradient(90deg,#f23290 0%,#f23156 50%,#f23242 100%);}
+.group_price ul li:first-child p{line-height:3.6rem;}
+.group_price ul li:first-child p span{padding-left:.8rem;font-size:.8rem;color:#fff;line-height:3.6rem;}
+.group_price ul li:first-child p span i{font-style:normal; font-size:.75rem;}
+.group_price ul li:first-child p em{font-size:.75rem;text-decoration:line-through; color:#fff;padding-left:.5rem;}
+/*限时秒杀begain*/
+.group_price ul li.ms_price .ms_div_price{width:100%;height:2.1rem;}
+.group_price ul li.ms_price .ms_div_price p span{line-height:2.1rem;}
+.group_price ul li.ms_price .ms_div_clock{width:100%;height:1.45rem; }
+.group_price ul li.ms_price .ms_div_clock .div_clock{float:left;border:solid 1px #fff; -o-border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px; background:url(../../../assets/mould_img/clokc.png) no-repeat left top; background-size:1.3rem 1.2rem;font-size:.75rem;color:#fff;padding-left:1.5rem;padding-right:.4rem;margin-left:1rem;}
+.group_price ul li.ms_price .ms_div_clock p{float: left;}
+.group_price ul li.ms_price p span{padding-left:.8rem;font-size:.8rem;color:#fff;line-height:3.6rem;}
+.group_price ul li:last-child{width:30%;}
+.group_price ul li:last-child p:first-child{font-size:.8rem;color:#f23764;padding-top:.2rem;padding-bottom:.2rem;text-align: center;}
+.group_price ul li:last-child p:last-child{font-size:.8rem; text-align: center;}
+.group_price ul li:last-child p:last-child span{display:inline-block; width:1.4rem; height:1.7rem; background:#f2315f;color:#fff;font-size:.75rem;text-align:center;line-height:1.7rem; -moz-border-radius:.4rem;-webkit-border-radius:.4rem;-o-border-radius:.4rem;border-radius:.4rem;margin-right:.2rem;}
+.group_price ul li:last-child p:last-child i{color:#f2315f;font-size:.8rem;}
+.product_title{background:#fff; padding-left:.8rem;padding-top:.6rem; padding-bottom:.6rem;margin-bottom:1rem;}
+.product_title .product_title_con{font-size:1.1rem;color:#333333;line-height:1.5rem;padding-right:.8rem;border-bottom:solid 1px #e9eaee;padding-bottom:.6rem;}
+.product_title_gz{font-size:.9rem;height:1rem; color:#333;padding-top:.8rem;padding-bottom:.8rem; line-height:2em; overflow: hidden;}
+.product_title_gz span{padding-right:.9rem; color:#7a7d89; font-size:.8rem;}
+.product_title_gz i{font-style:normal;border:solid 1px #f56767;-o-border-radius:.125rem;-moz-border-radius:.125rem;-webkit-border-radius:.125rem;border-radius:.125rem; font-size:.75rem;color:#f56767;padding:.125rem .3rem;margin-right:.8rem;}
+.address{background:#fff;border-bottom:solid 1px #d6d6d7;padding:1rem .8rem 1rem .8rem;} 
+.address address{padding-right:.9rem; color:#7a7d89; font-size:.8rem;font-style:normal; }      
+.address address span{font-size:1rem;color:#333; background:url(../../../assets/mould_img/addressbj.png) no-repeat .8rem center; background-size:1rem 1rem; padding-left:2.2rem;}
+.group_footer{background:#fff; padding-top:1rem;position:fixed;bottom:0;left:0;width:100%;}
+.group_footer a{height:3.5rem;background:#f23030;line-height:3.5rem;color:#fff;font-size:1.25rem;text-align:center;display:block;}
+/*限时秒杀begain*/
+.group_detail_title{height:3.5rem;border-top:solid 1px #d6d6d7;border-bottom:solid 1px #d6d6d7;background:#f0f2f5;padding:0  .6rem;position:relative;}
+.group_detail_title i{position:absolute; z-index:50; width:100%;left: 0;top: 50%;border-bottom:solid 1px #dcdcdc;}
+.group_detail_title p{ position:absolute; z-index:60;line-height:3.5rem;text-align:center; width:100%;left: 0;top: 0;}
+
+.group_detail_title p span{font-size:.75rem;color:#031a27;background:#f0f2f5;padding:0 1.7rem;line-height:3.5rem;}
+.group_detail{background:#fff;}
+.group_pic_tit{height:2.8rem;border-bottom:solid #dcdcdc 1px;}
+.group_pic_tit span{height:2.8rem;line-height:2.8rem;font-size:1.25rem;color:#ff5405;border-bottom:solid 2px #ff5405;padding:0 2.1rem;display:inline-block;}
+.chose_spec{background:#fff;}
+.chose_spec_pic{border-bottom:solid 1px #eaecef;padding:0 .75rem;height:7.1rem;position:relative;}
+.chose_spec_pic img{position:absolute; left: .75rem;top:-1rem;border:solid 1px #e2e2e3;-o-border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;width:7rem;height:7rem;}
+.chose_spec_pic p{font-size:1.1rem;color:#f11c1c;padding-left:8rem;padding-top:3.25rem;}
+.chose_spec_class{padding:1rem .8rem .8rem 1rem;}
+.chose_spec_class h3{color:#565656;height:1rem;font-size:.875rem;padding-bottom:.8rem;}
+.chose_spec_class p{}
+.chose_spec_class p span{font-size:.875rem;color:#1b1b1f;border:solid 1px #a3a5a6;padding:.5rem .8rem;-o-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin-right:.5rem;display:inline-block;margin-bottom:.8rem;}
+.chose_spec_class p span.current{border-color:#f66868;color:#f01414;}
+.chose_spec_num{padding:0 .8rem;}
+.chose_spec_num p{float:left;font-size:.875rem;color:#565656;height:1.8rem;line-height:1.8rem;}
+.chose_spec_num .num_add{float:right;width:6.7rem;height:1.8rem;border:solid 1px #545456;-o-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.chose_spec_num .num_add p span.jian{border-right:solid 1px #545456;display:inline-block;width:1.8rem;height:1.8rem;text-align:center;line-height:1.8rem;}
+.chose_spec_num .num_add p span.num{font-size:1rem;color:#08080b;width:2.4rem;height:1.8rem;text-align:center;display:inline-block;}
+.chose_spec_num .num_add p span.add{width:1.8rem;height:1.8rem;line-height:1.8rem;text-align:center;border-left:solid 1px #545456;display:inline-block;}
+
+

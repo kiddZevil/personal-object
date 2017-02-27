@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>规则配置页面</title>
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/tablepay.css">
+    <link rel="stylesheet" href="../../assets/css/yuanyan.css">
+
+</head>
+<body>
+<!--title begin-->
+<div class="con-title">
+    <p><a href="###">新建团购营销活动</a></p>
+</div>
+<!--title end-->
+<!--右侧主体内容begin-->
+<div class="wrap_right_con">
+    <div class="all_order rule-config">
+        <!--进度区域 begin-->
+        <div class="progress-bar">
+            <div class="t-step">
+                <ol class="t-stepbar">
+                    <li class="step-first">
+                        <div class="step-done">
+                            <div class="step-num">1</div>
+                            <div class="step-name">基本信息</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-current">
+                            <div class="step-num">2</div>
+                            <div class="step-name">配置规则</div>
+                        </div>
+                    </li>
+                    ...
+                    <li class="step-last">
+                        <div>
+                            <div class="step-num">3</div>
+                            <div class="step-name">完成</div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!--进度区域 end-->
+        <!--规则配置区域 begin-->
+        <div class="configuration">
+            <div class="title-box">
+                <span class="config-title underline-tab">规则配置</span>
+                <a href="javascript:;" class="btn btn-green">添加规则</a>
+            </div>
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                    <td>开始时间</td>
+                    <td>结束时间</td>
+                    <td>商品</td>
+                    <td>现价</td>
+                    <td>原价</td>
+                    <td>是否限购</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <input type="text" class="Timer" name="start-time">
+                    </td>
+                    <td>
+                        <input type="text" class="Timer" name="end-time">
+                    </td>
+                    <td>
+                        <div class="pro-img">
+                            <img src="../assets/images/phone.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            红米Note3 高配全网通版 3GB+32GB 金色4G手机 双卡双待
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" class="current-cost" name="current-cost" value="1499.00">
+                    </td>
+                    <td>
+                        2199.00
+                    </td>
+                    <td>
+                        是
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="Timer" name="start-time">
+                    </td>
+                    <td>
+                        <input type="text" class="Timer" name="end-time">
+                    </td>
+                    <td>
+                        <div class="pro-img">
+                            <img src="../assets/images/phone.png" alt="">
+                        </div>
+                        <div class="pro-title">
+                            红米Note3 高配全网通版 3GB+32GB 金色4G手机 双卡双待
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" class="current-cost" name="current-cost" value="1499.00">
+                    </td>
+                    <td>
+                        2199.00
+                    </td>
+                    <td>
+                        是
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--规则配置区域 end-->
+        <!--模板配置begin-->
+        <div class="template-config clear">
+            <div class="title-box">
+                <span class="config-title underline-tab">模板配置</span>
+            </div>
+            <ul>
+                <li><img src="../assets/images/template.png" alt="" />
+                    <p>过年大团购模板一</p>
+                </li>
+                <li class="selected-img"><img src="../assets/images/template.png" alt="" />
+                    <p>过年大团购模板一</p>
+                </li>
+                <li><img src="../assets/images/template.png" alt="" />
+                    <p>过年大团购模板一</p>
+                </li>
+            </ul>
+        </div>
+        <!--模板配置end-->
+        <!--活动说明begin-->
+        <div class="activity-des mb-30">
+            <div class="des-title mb-10">活动规则：</div>
+            <textarea name="activity-description"  cols="150" rows="6" placeholder="请输入团购活动规则"></textarea>
+        </div>
+        <!--活动说明end-->
+        <!--按钮区域 beg-->
+        <ul class="btn-box">
+            <li><a href="javascript:;" class="btn">上一步</a></li>
+            <li><a href="javascript:;" class="btn">保存</a></li>
+            <li><a href="javascript:;" class="btn btn-blue">下一步</a></li>
+            <li><a href="javascript:;" class="btn">预览</a></li>
+        </ul>
+        <!--按钮区域 end-->
+    </div>
+</div>
+<!--右侧主体内容end-->
+</body>
+</html>

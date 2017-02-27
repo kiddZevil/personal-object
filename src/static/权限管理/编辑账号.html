@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/tablepay.css">
+    <link rel="stylesheet" href="../../assets/css/yuanyan.css">
+    <link rel="stylesheet" href="../../assets/css/zg.css">
+</head>
+<body>
+<!--title begin-->
+<div class="con-title">
+    <p><a href="###">权限管理</a><span>&nbsp;&gt;&nbsp;权限编辑</span></p>
+</div>
+<!--title end-->
+<!--右侧主体内容begin-->
+<div class="wrap_right_con">
+    <div class="all_order right-edit">
+        <form class="form-horizontal">
+            <!--账号 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    账号:
+                </div>
+                <div class="controls">
+                    <input type="text" name="account">
+
+                </div>
+            </div>
+            <!--账号  end-->
+
+            <!--归属渠道 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    归属渠道:
+                </div>
+                <div class="controls">
+                    <select name="channel" >
+                        <option value="0">请选择</option>
+                    </select>
+                    <p id="J-channel" class="error fn-hide">请选择归属渠道</p>
+                </div>
+            </div>
+            <!--归属渠道  end-->
+
+            <!--密码 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    密码:
+                </div>
+                <div class="controls">
+                    <input type="password">
+                    <p id="J-password" class="error fn-hide">请输入您的密码</p>
+                </div>
+            </div>
+            <!--密码  end-->
+
+            <!--确认密码 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    确认密码:
+                </div>
+                <div class="controls">
+                    <input type="password" >
+                    <p id="J-rePassword" class="error fn-hide">两次输入的密码必须一致</p>
+                </div>
+            </div>
+            <!--确认密码  end-->
+
+            <!--角色 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    角色:
+                </div>
+                <div class="controls">
+                    <select name="roles" >
+                        <option value="0">请选择</option>
+                    </select>
+                    <p id="J-roles" class="error fn-hide">请选择角色</p>
+                </div>
+            </div>
+            <!--角色  end-->
+
+            </form>
+        <div class="btn-box">
+            <a href="javascript:;" class="btn btn-blue">确定提交</a>
+            <a href="javascript:;" class="btn">取消</a>
+        </div>
+    </div>
+</div>
+<!--右侧主体内容end-->
+</body>
+</html>

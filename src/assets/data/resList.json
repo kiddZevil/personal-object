@@ -1,0 +1,43 @@
+{
+  "returnCode":"0",
+  "returnMessage":"success",
+  "bean":{
+  },
+  "beans":[{
+    "cmpgnRsId":"a1",
+    "rsType":"送优惠",
+    "rsNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "crtTime":"2016-06-08 12:33:22",
+    "preprQty":"1",
+    "leftQty":"123",
+    "rsType":"实物",
+    "validTime":"2016-06-08 12:33:22-2016-10-08 12:33:22",
+    "crtUserNm":"老王",
+    "validStsCd":"0"
+  },{
+    "cmpgnRsId":"a1",
+    "rsType":"送优惠",
+    "rsNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "crtTime":"2016-06-08 12:33:22",
+    "preprQty":"1",
+    "leftQty":"123",
+    "rsType":"实物",
+    "validTime":"2016-06-08 12:33:22-2016-10-08 12:33:22",
+    "crtUserNm":"老王",
+    "validStsCd":"1"
+  },{
+    "cmpgnRsId":"a1",
+    "rsType":"送优惠",
+    "rsNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "crtTime":"2016-06-08 12:33:22",
+    "preprQty":"1",
+    "leftQty":"123",
+    "rsType":"实物",
+    "validTime":"2016-06-08 12:33:22-2016-10-08 12:33:22",
+    "crtUserNm":"老王",
+    "validStsCd":"0"
+  }]
+}

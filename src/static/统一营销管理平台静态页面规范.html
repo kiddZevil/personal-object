@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>同意营销管理平台规范</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/tablepay.css"/>
+    <link rel="stylesheet" href="../assets/css/yxgl-ysg.css"/>
+    <link rel="stylesheet" href="../assets/css/yuanyan.css"/>
+    <link rel="stylesheet" href="../assets/css/zg.css"/>
+
+    <style type="text/css">
+        .description{padding:10px;background:#fff;}
+        .description p{font-size:14px;color:#333;line-height:20px;}
+        h3{font-size:18px;color:#333;}
+        .mb20{margin-bottom:20px;}
+    </style>
+</head>
+<body> 
+<div class="description mb20">
+    <p>同意营销管理平台的面包屑，包含有新建的按钮；如果没有新建的按钮，将按钮直接去掉。具体的代码如下</p>
+    <p class="mb20">面包屑的展示如下：</p>
+    <div class="mb20">
+        <div class="con-title">
+            <a href="javascript:;" class="btn btn-blue fn-right mt-10" id="G-addActivity" style="width:130px;">新建营销活动</a>
+            <p>活动管理</p>
+        </div>
+    </div>
+    <h3 class="mb20">面包屑的代码</h3>
+    <div>
+        <pre>
+            &lt;div class=&quot;con-title&quot;&gt;
+                &lt;a href=&quot;javascript:;&quot; class=&quot;btn btn-blue fn-right mt-10&quot; id=&quot;G-addActivity&quot; style=&quot;width:130px;&quot;&gt;新建营销活动&lt;/a&gt;
+                &lt;p&gt;活动管理&lt;/p&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+</div>
+
+<div class="description mb20">
+    <p class="mb20">搜索区域展现如下：</p>
+    <div class="mb20">
+        <div class="search_con jf-form columns-3">
+            <form class="J_formSearch">
+                <ul class="jf-form-item fn-clear">
+                    <li>
+                        <label>
+                            活动编号：
+                        </label>
+                        <div>
+                            <input type="text" name="cmpgnId">
+                        </div>
+                    </li>
+                    <li>
+                        <label>活动名称：</label>
+                        <div>
+                            <input type="text" name="cmpgnNm">
+                            <i class="iconfont icon-tree"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <label>活动类型：</label>
+                        <div>
+                           <select name="cmpgnTypeCd" class="input">
+                               <option value="">全部</option>
+                               <option value="01">团购</option>
+                               <option value="02">秒杀</option>
+                               <option value="03">抽奖</option>
+                               <option value="04">签到</option>
+                               <option value="05">宣传</option>
+                           </select>
+                        </div>
+                    </li>
+                    <li >        
+                        <label>活动开始时间：</label>
+                        <div class="time-box">
+                            <div class="beg-time-box">
+                                <input name="bgnValidTime" class="wid45" type="text" value="2016-12-27 00:00:00">
+                            </div>
+                        </div>
+                    <li>
+                        <label>活动开始时间：</label>
+                        <div class="time-box">
+                            <div class="beg-time-box">
+                                <input name="bgnValidTime" class="wid45" type="text" value="2016-12-27 00:00:00">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label></label>
+                        <div>
+                            <a href="javascript:;" class="btn btn-blue search">搜索</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <h3 class="mb20">搜索区域的代码</h3>
+    <div>
+        <pre>
+            &lt;div class=&quot;jf-form columns-4 search_con&quot;&gt;
+                &lt;form class=&quot;J_formSearch&quot;&gt;
+                    &lt;ul class=&quot;jf-form-item fn-clear&quot;&gt;
+                        &lt;li&gt;
+                            &lt;label title=&quot;资源类型&quot;&gt;资源类型：&lt;/label&gt;
+                            &lt;div&gt;
+                                &lt;select name=&quot;rsTypeCd&quot;&gt;
+                                    &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                                    &lt;option value=&quot;01&quot;&gt;实物&lt;/option&gt;
+                                    &lt;option value=&quot;03&quot;&gt;虚拟商品&lt;/option&gt;
+                                    &lt;option value=&quot;02&quot;&gt;优惠券&lt;/option&gt;
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;label title=&quot;资源名称&quot;&gt;资源名称：&lt;/label&gt;
+                            &lt;div&gt;
+                                &lt;input name=&quot;rsNm&quot; type=&quot;text&quot;&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;label title=&quot;资源状态&quot;&gt;资源状态：&lt;/label&gt;
+                            &lt;div&gt;
+                                &lt;select name=&quot;validStsCd&quot;&gt;
+                                    &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                                    &lt;option value=&quot;1&quot;&gt;已开启&lt;/option&gt;
+                                    &lt;option value=&quot;0&quot;&gt;已停用&lt;/option&gt;                              
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;div style=&quot;min-width:120px;padding:6px 0;&quot;&gt;
+                                &lt;a class=&quot;btn btn-blue search fn-right&quot;&gt;搜索&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+</div>
+<div class="description mb20">
+    <p class="mb20">分页展现如下：</p>
+    <div class="pagination">
+        <span class="current prev">上一页</span>
+        <span class="current">1</span>
+        <a href="javascript:">2</a>
+        <a href="javascript:">3</a>
+        <span>...</span>
+        <a href="javascript:">73</a>
+        <a href="javascript:" class="next">下一页</a>
+    </div>
+    <div style="clear:both;"></div>
+    <h3 class="mb20">分页区域的代码如下：</h3>
+    <div>
+        <pre>
+            &lt;div class=&quot;pagination&quot;&gt;
+                &lt;span class=&quot;current prev&quot;&gt;上一页&lt;/span&gt;
+                &lt;span class=&quot;current&quot;&gt;1&lt;/span&gt;
+                &lt;a href=&quot;javascript:&quot;&gt;2&lt;/a&gt;
+                &lt;a href=&quot;javascript:&quot;&gt;3&lt;/a&gt;
+                &lt;span&gt;...&lt;/span&gt;
+                &lt;a href=&quot;javascript:&quot;&gt;73&lt;/a&gt;
+                &lt;a href=&quot;javascript:&quot; class=&quot;next&quot;&gt;下一页&lt;/a&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+</div>
+<div class="description mb20">
+    <p class="mb20">table页面展现如下</p>
+    <div class="sn-list fn-clear mt-15 c-activity-list">
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">活动编号</th>
+                    <th>活动名称</th>
+                    <th width="7%">活动类型</th>
+                    <th width="8%">渠道</th>
+                    <th width="16%">活动有效期</th>
+                    <th width="8%">状态</th>
+                    <th width="8%">启用标识</th>
+                    <th width="20%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td-show-more">201701111717234622341</td>
+                    <td class="fn-txt-left td-show-more">测测测测测是</td>
+                    <td>秒杀</td>
+                    <td title="商户入驻平台">商户入驻平台</td>
+                    <td class="td-show-more">2017-01-11 17:20:57 - 2017-01-13 17:16:57</td>
+                    <td class="tag-status">
+                        <span class="t-tag t-tag-edit fn-text-center">未开展</span>
+                    </td>
+                    <td class="begin-or-stop">
+                        <span class="t-tag-todo" style="background:#60bb58;">已开启</span>
+                        <span style="display:none" class="t-tag">已停用</span>
+                    </td>
+
+                    <td class="act-td">
+                        <a href="###" class="btn btn-link oper-activity">停止</a>
+                        <a href="###" class="btn btn-link oper-activity">查看</a>
+                        <a href="###" class="btn btn-link oper-activity">分享</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-show-more">201701111516558812338</td>
+                    <td class="fn-txt-left td-show-more">AJAJASS</td>
+                    <td> 团购</td>
+                    <td title="商户入驻平台">商户入驻平台</td>
+                    <td class="td-show-more">2017-01-11 15:16:31 - 2017-01-13 15:16:31</td>
+                    <td class="tag-status">
+                        <span class="t-tag t-tag-edit fn-text-center">已开展</span>
+                    </td>
+                     <td class="begin-or-stop">
+                        <span class="t-tag-todo" style="background:#60bb58;">已开启</span>
+                        <span style="display:none" class="t-tag">已停用</span>
+                    </td>
+                    <td class="act-td">
+                        <a href="###"class="btn btn-link oper-activity">停止</a>
+                        <a href="###"class="btn btn-link oper-activity">查看</a>
+                        <a href="###"class="btn btn-link oper-activity">分享</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3 class="mb20">table区域的代码如下：</h3>
+    <div>
+        <pre>
+            &lt;div class=&quot;sn-list fn-clear mt-15 c-activity-list&quot;&gt;
+                &lt;table&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th width=&quot;15%&quot;&gt;活动编号&lt;/th&gt;
+                            &lt;th&gt;活动名称&lt;/th&gt;
+                            &lt;th width=&quot;7%&quot;&gt;活动类型&lt;/th&gt;
+                            &lt;th width=&quot;8%&quot;&gt;渠道&lt;/th&gt;
+                            &lt;th width=&quot;16%&quot;&gt;活动有效期&lt;/th&gt;
+                            &lt;th width=&quot;8%&quot;&gt;状态&lt;/th&gt;
+                            &lt;th width=&quot;8%&quot;&gt;启用标识&lt;/th&gt;
+                            &lt;th width=&quot;20%&quot;&gt;操作&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;td-show-more&quot;&gt;201701111717234622341&lt;/td&gt;
+                            &lt;td class=&quot;fn-txt-left td-show-more&quot;&gt;测测测测测是&lt;/td&gt;
+                            &lt;td&gt;秒杀&lt;/td&gt;
+                            &lt;td title=&quot;商户入驻平台&quot;&gt;商户入驻平台&lt;/td&gt;
+                            &lt;td class=&quot;td-show-more&quot;&gt;2017-01-11 17:20:57 - 2017-01-13 17:16:57&lt;/td&gt;
+                            &lt;td class=&quot;tag-status&quot;&gt;
+                                &lt;span class=&quot;t-tag t-tag-edit fn-text-center&quot;&gt;未开展&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;begin-or-stop&quot;&gt;
+                                &lt;span class=&quot;t-tag-todo&quot; style=&quot;background:#60bb58;&quot;&gt;已开启&lt;/span&gt;
+                                &lt;span style=&quot;display:none&quot; class=&quot;t-tag&quot;&gt;已停用&lt;/span&gt;
+                            &lt;/td&gt;
+
+                            &lt;td class=&quot;act-td&quot;&gt;
+                                &lt;a href=&quot;###&quot; class=&quot;btn btn-link oper-activity&quot;&gt;停止&lt;/a&gt;
+                                &lt;a href=&quot;###&quot; class=&quot;btn btn-link oper-activity&quot;&gt;查看&lt;/a&gt;
+                                &lt;a href=&quot;###&quot; class=&quot;btn btn-link oper-activity&quot;&gt;分享&lt;/a&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;td-show-more&quot;&gt;201701111516558812338&lt;/td&gt;
+                            &lt;td class=&quot;fn-txt-left td-show-more&quot;&gt;AJAJASS&lt;/td&gt;
+                            &lt;td&gt; 团购&lt;/td&gt;
+                            &lt;td title=&quot;商户入驻平台&quot;&gt;商户入驻平台&lt;/td&gt;
+                            &lt;td class=&quot;td-show-more&quot;&gt;2017-01-11 15:16:31 - 2017-01-13 15:16:31&lt;/td&gt;
+                            &lt;td class=&quot;tag-status&quot;&gt;
+                                &lt;span class=&quot;t-tag t-tag-edit fn-text-center&quot;&gt;已开展&lt;/span&gt;
+                            &lt;/td&gt;
+                             &lt;td class=&quot;begin-or-stop&quot;&gt;
+                                &lt;span class=&quot;t-tag-todo&quot; style=&quot;background:#60bb58;&quot;&gt;已开启&lt;/span&gt;
+                                &lt;span style=&quot;display:none&quot; class=&quot;t-tag&quot;&gt;已停用&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;act-td&quot;&gt;
+                                &lt;a href=&quot;###&quot;class=&quot;btn btn-link oper-activity&quot;&gt;停止&lt;/a&gt;
+                                &lt;a href=&quot;###&quot;class=&quot;btn btn-link oper-activity&quot;&gt;查看&lt;/a&gt;
+                                &lt;a href=&quot;###&quot;class=&quot;btn btn-link oper-activity&quot;&gt;分享&lt;/a&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+</div>
+
+<div class="description mb20">
+    <p class="mb20">弹出框的table展现如下</p>
+    <div class="c-section act-details-info" id="G-details-actInfo">
+        <div style="height:400px; width:800px;">
+            <table>
+                <thead>
+                    <tr class="c-table-tit">
+                        <th colspan="3">资源信息</th>
+                    </tr>
+                </thead>
+                <tbody id="G-tbody">
+                    <tr>
+                        <td width="33.33%" style="display: table; width: 100%; border: 0">
+                            <div class="info-label" style="display: table-cell; vertical-align: middle;width:33%; width:100px\0;width:100px\9;">
+                                <span>资源名称：</span>
+                            </div>
+                            <span class="info-con" style="display: table-cell; width: 60%">LKJHGFDSA</span>
+                        </td>
+                        <td width="33.33%">
+                            <span class="info-label">资源类型：</span>               
+                            <span class="info-con">
+                                实物
+                            </span>
+                        </td>
+                        <td width="33.33%">
+                            <span class="info-label">资源编号：</span>
+                            <span class="info-con">20170120170939680363</span>
+                        </td>
+                    </tr>      
+                    <tr>
+                        <td width="33.33%">
+                            <span class="info-label">创建人：</span>
+                            <span class="info-con">wlc001</span>
+                        </td>           
+                        <td width="33.33%">
+                            <span class="info-label">创建时间：</span>
+                            <span class="info-con">2017-01-20 17:09:39</span>
+                        </td>
+                        <td width="33.33%">
+                            <span class="info-label">状态：</span>
+                            <span class="t-tag-todo">
+                                    已启用
+                            </span>
+                        </td>           
+                    </tr>
+                    <tr>
+                        <td width="33.33%">
+                            <span class="info-label">是否为商品：</span>
+                            <span class="info-con">
+                            
+                                    不是
+                            </span>
+                        </td>
+                        <td>                
+                        </td>
+                        <td>                                
+                        </td>
+                    </tr>
+                     <tr>           
+                        <td width="33.33%">
+                            <span class="info-label">归属渠道ID：</span>
+                            <span class="info-con">1112</span>
+                        </td>
+                        <td width="33.33%">
+                            <span class="info-label">数量：</span>
+                            <span class="info-con">1234</span>
+                        </td>
+                        <td width="33.33%">
+                            <span class="info-label">剩余：</span>
+                            <span class="info-con">1233</span>
+                        </td>        
+                    </tr>           
+                    <tr>
+                        <td colspan="3" class="c-info-txt">
+                            <div class="fn-clear">
+                                <span class="info-label">资源描述：</span>
+                                <span class="info-con">
+                                    121213213EWEDESDSCSC
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="c-info-txt">
+                            <div class="fn-clear">
+                                <span class="info-label" style="vertical-align: top;">资源图片：</span>
+                                <span class="info-con">
+                                    <img width="200" src="http://192.168.100.4:20500/busisystem/mamp/resource/img/cd883ba7-c846-4e44-824c-4ad98fe87865-201701201709000036-500x500.jpg">   
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h3 class="mb20">弹出框的table区域的代码如下：</h3>
+    <div>
+        <pre>
+            &lt;div style=&quot;height:400px; width:800px;&quot;&gt;
+                &lt;table&gt;
+                    &lt;thead&gt;
+                        &lt;tr class=&quot;c-table-tit&quot;&gt;
+                            &lt;th colspan=&quot;3&quot;&gt;资源信息&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody id=&quot;G-tbody&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;td width=&quot;33.33%&quot; style=&quot;display: table; width: 100%; border: 0&quot;&gt;
+                                &lt;div class=&quot;info-label&quot; style=&quot;display: table-cell; vertical-align: middle;width:33%; width:100px\0;width:100px\9;&quot;&gt;
+                                    &lt;span&gt;资源名称：&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;span class=&quot;info-con&quot; style=&quot;display: table-cell; width: 60%&quot;&gt;LKJHGFDSA&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;资源类型：&lt;/span&gt;               
+                                &lt;span class=&quot;info-con&quot;&gt;
+                                    实物
+                                &lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;资源编号：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;20170120170939680363&lt;/span&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;      
+                        &lt;tr&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;创建人：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;wlc001&lt;/span&gt;
+                            &lt;/td&gt;           
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;创建时间：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;2017-01-20 17:09:39&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;状态：&lt;/span&gt;
+                                &lt;span class=&quot;t-tag-todo&quot;&gt;
+                                        已启用
+                                &lt;/span&gt;
+                            &lt;/td&gt;           
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;是否为商品：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;
+                                
+                                        不是
+                                &lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;                
+                            &lt;/td&gt;
+                            &lt;td&gt;                                
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                         &lt;tr&gt;           
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;归属渠道ID：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;1112&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;数量：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;1234&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td width=&quot;33.33%&quot;&gt;
+                                &lt;span class=&quot;info-label&quot;&gt;剩余：&lt;/span&gt;
+                                &lt;span class=&quot;info-con&quot;&gt;1233&lt;/span&gt;
+                            &lt;/td&gt;        
+                        &lt;/tr&gt;           
+                        &lt;tr&gt;
+                            &lt;td colspan=&quot;3&quot; class=&quot;c-info-txt&quot;&gt;
+                                &lt;div class=&quot;fn-clear&quot;&gt;
+                                    &lt;span class=&quot;info-label&quot;&gt;资源描述：&lt;/span&gt;
+                                    &lt;span class=&quot;info-con&quot;&gt;
+                                        121213213EWEDESDSCSC
+                                    &lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td colspan=&quot;3&quot; class=&quot;c-info-txt&quot;&gt;
+                                &lt;div class=&quot;fn-clear&quot;&gt;
+                                    &lt;span class=&quot;info-label&quot; style=&quot;vertical-align: top;&quot;&gt;资源图片：&lt;/span&gt;
+                                    &lt;span class=&quot;info-con&quot;&gt;
+                                        &lt;img width=&quot;200&quot; src=&quot;http://192.168.100.4:20500/busisystem/mamp/resource/img/cd883ba7-c846-4e44-824c-4ad98fe87865-201701201709000036-500x500.jpg&quot;&gt;   
+                                    &lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+</div>
+<div class="description mb20">
+    <p class="mb20">步骤条的展示如下</p>
+    <div class="c-page-header">
+        <div class="step-section">
+            <div class="t-step">
+                <ol class="t-stepbar">
+                    <li class="step-first">
+                        <div id="G-stepFirst" class="step-current">
+                            <div class="step-num">1</div>
+                            <div class="step-name">基本信息</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="G-stepSecond">
+                            <div class="step-num">2</div>
+                            <div class="step-name">配置规则</div>
+                        </div>
+                    </li>
+                    <li class="step-last">
+                        <div id="G-stepThird">
+                            <div class="step-num">3</div>
+                            <div class="step-name">完成</div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <h3 class="mb20">步骤条区域的代码如下：</h3>
+    <div>
+        <pre>
+            &lt;div class=&quot;c-page-header&quot;&gt;
+                &lt;div class=&quot;step-section&quot;&gt;
+                    &lt;div class=&quot;t-step&quot;&gt;
+                        &lt;ol class=&quot;t-stepbar&quot;&gt;
+                            &lt;li class=&quot;step-first&quot;&gt;
+                                &lt;div id=&quot;G-stepFirst&quot; class=&quot;step-current&quot;&gt;
+                                    &lt;div class=&quot;step-num&quot;&gt;1&lt;/div&gt;
+                                    &lt;div class=&quot;step-name&quot;&gt;基本信息&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;div id=&quot;G-stepSecond&quot;&gt;
+                                    &lt;div class=&quot;step-num&quot;&gt;2&lt;/div&gt;
+                                    &lt;div class=&quot;step-name&quot;&gt;配置规则&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;step-last&quot;&gt;
+                                &lt;div id=&quot;G-stepThird&quot;&gt;
+                                    &lt;div class=&quot;step-num&quot;&gt;3&lt;/div&gt;
+                                    &lt;div class=&quot;step-name&quot;&gt;完成&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+</div>
+
+<div class="description mb20">
+    <p class="mb20">表单区域展示如下</p>
+    <div>
+        <div class="c-page-container mt-15">
+            <form id="G-activityEdit">
+                <div class="c-article c-step-one" id="G-stepOne" style="display: block;">
+                    <div class="c-section">
+                        <input type="hidden" value="01" name="cmpgnTypeCd">
+                        <input type="hidden" value="" name="cmpgnId">
+                        <div class="c-form-group">
+                            <label> <b>*</b> 活动名称： </label>
+                            <input name="cmpgnNm" type="text" class="c-form-control" maxlength="32" placeholder="请输入活动名称(不少于5个字)"/>
+                            <span class="c-form-tips">活动名称不少于5个字且不能含有空格</span>
+                        </div>
+                        <div class="c-form-group">
+                            <label> <b>*</b> 活动简介：</label>
+                            <textarea class="c-form-control" name="cmpgnDesc" maxlength="250" rows="3" placeholder="请输入活动简介"></textarea>
+                            <span class="c-form-tips"></span>
+                        </div>
+                        <div class="c-form-group">
+                            <label> <b>*</b> 起止时间：</label>
+                            <div class="c-input-inline fn-clear">
+                                <input type="text" name="bgnValidTime" class="c-form-control" placeholder="请选择开始时间"/>
+                                <div class="c-form-mid">至</div>
+                                <input type="text" name="endValidTime" class="c-form-control" placeholder="请选择结束时间"/>
+                            </div>
+                        </div>
+                        <div class="c-form-group" id="">
+                            <label> <b>*</b> 活动类型：</label>
+                            <div id="G-selActPatBox" style="display: inline-block">    
+                                <select class="sel-ptool c-form-control sel-act" name="cmpgnType" disabled="disabled">
+                                    <option value="01" data-skip="js/workflow/activity/groupbuy/groupbuy">团购活动</option>
+                                    <option value="02" data-skip="js/workflow/activity/seckill/seckill">秒杀活动</option>
+                                    <option value="03" data-skip="js/workflow/activity/luckdraw/luckdraw">抽奖活动</option>
+                                    <option value="04" data-skip="js/workflow/activity/signIn/signIn">签到活动</option>
+                                    <option value="05" data-skip="js/workflow/activity/propagate/propagate">宣传活动</option>
+                                </select>
+                            </div>  
+                        </div>
+                        <div class="c-form-group" style="display: none">
+                            <label> <b>*</b> 活动子类型：</label>
+                            <div id="G-selActChnBox" style="display: inline-block"></div>
+                        </div>
+                        <div class="c-form-group">
+                            <label> <b>*</b> 创建人信息：</label>
+                            <input type="text" class="c-form-control" name="founder" disabled="" value="创建人不可编辑" style="width:150px"/>
+                        </div>
+                        <div style="margin-left: 101px;">
+                            <a href="javascript:;" class="btn btn-blue" id="G-stepOneNext">下一步</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <h3 class="mb20">步骤条区域的代码如下：</h3>
+    <div>
+        <pre>
+            &lt;div class=&quot;c-page-container mt-15&quot;&gt;
+                &lt;form id=&quot;G-activityEdit&quot;&gt;
+                    &lt;div class=&quot;c-article c-step-one&quot; id=&quot;G-stepOne&quot; style=&quot;display: block;&quot;&gt;
+                        &lt;div class=&quot;c-section&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; value=&quot;01&quot; name=&quot;cmpgnTypeCd&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; value=&quot;&quot; name=&quot;cmpgnId&quot;&gt;
+                            &lt;div class=&quot;c-form-group&quot;&gt;
+                                &lt;label&gt; &lt;b&gt;*&lt;/b&gt; 活动名称： &lt;/label&gt;
+                                &lt;input name=&quot;cmpgnNm&quot; type=&quot;text&quot; class=&quot;c-form-control&quot; maxlength=&quot;32&quot; placeholder=&quot;请输入活动名称(不少于5个字)&quot;/&gt;
+                                &lt;span class=&quot;c-form-tips&quot;&gt;活动名称不少于5个字且不能含有空格&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;c-form-group&quot;&gt;
+                                &lt;label&gt; &lt;b&gt;*&lt;/b&gt; 活动简介：&lt;/label&gt;
+                                &lt;textarea class=&quot;c-form-control&quot; name=&quot;cmpgnDesc&quot; maxlength=&quot;250&quot; rows=&quot;3&quot; placeholder=&quot;请输入活动简介&quot;&gt;&lt;/textarea&gt;
+                                &lt;span class=&quot;c-form-tips&quot;&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;c-form-group&quot;&gt;
+                                &lt;label&gt; &lt;b&gt;*&lt;/b&gt; 起止时间：&lt;/label&gt;
+                                &lt;div class=&quot;c-input-inline fn-clear&quot;&gt;
+                                    &lt;input type=&quot;text&quot; name=&quot;bgnValidTime&quot; class=&quot;c-form-control&quot; placeholder=&quot;请选择开始时间&quot;/&gt;
+                                    &lt;div class=&quot;c-form-mid&quot;&gt;至&lt;/div&gt;
+                                    &lt;input type=&quot;text&quot; name=&quot;endValidTime&quot; class=&quot;c-form-control&quot; placeholder=&quot;请选择结束时间&quot;/&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;c-form-group&quot; id=&quot;&quot;&gt;
+                                &lt;label&gt; &lt;b&gt;*&lt;/b&gt; 活动类型：&lt;/label&gt;
+                                &lt;div id=&quot;G-selActPatBox&quot; style=&quot;display: inline-block&quot;&gt;    
+                                    &lt;select class=&quot;sel-ptool c-form-control sel-act&quot; name=&quot;cmpgnType&quot; disabled=&quot;disabled&quot;&gt;
+                                        &lt;option value=&quot;01&quot; data-skip=&quot;js/workflow/activity/groupbuy/groupbuy&quot;&gt;团购活动&lt;/option&gt;
+                                        &lt;option value=&quot;02&quot; data-skip=&quot;js/workflow/activity/seckill/seckill&quot;&gt;秒杀活动&lt;/option&gt;
+                                        &lt;option value=&quot;03&quot; data-skip=&quot;js/workflow/activity/luckdraw/luckdraw&quot;&gt;抽奖活动&lt;/option&gt;
+                                        &lt;option value=&quot;04&quot; data-skip=&quot;js/workflow/activity/signIn/signIn&quot;&gt;签到活动&lt;/option&gt;
+                                        &lt;option value=&quot;05&quot; data-skip=&quot;js/workflow/activity/propagate/propagate&quot;&gt;宣传活动&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;/div&gt;  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;c-form-group&quot; style=&quot;display: none&quot;&gt;
+                                &lt;label&gt; &lt;b&gt;*&lt;/b&gt; 活动子类型：&lt;/label&gt;
+                                &lt;div id=&quot;G-selActChnBox&quot; style=&quot;display: inline-block&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;c-form-group&quot;&gt;
+                                &lt;label&gt; &lt;b&gt;*&lt;/b&gt; 创建人信息：&lt;/label&gt;
+                                &lt;input type=&quot;text&quot; class=&quot;c-form-control&quot; name=&quot;founder&quot; disabled=&quot;&quot; value=&quot;创建人不可编辑&quot; style=&quot;width:150px&quot;/&gt;
+                            &lt;/div&gt;
+                            &lt;div style=&quot;margin-left: 101px;&quot;&gt;
+                                &lt;a href=&quot;javascript:;&quot; class=&quot;btn btn-blue&quot; id=&quot;G-stepOneNext&quot;&gt;下一步&lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
+
+
+</div>
+</body>
+</html>

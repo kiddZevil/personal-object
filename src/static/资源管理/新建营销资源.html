@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/tablepay.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/zg.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/iconfont/iconfont.css"/>
+</head>
+<body>
+    <div class="z-container">
+        <div id="select_types">
+            <form class="form-horizontal shopInfoForm">
+                <div class="control-group">
+                    <label class="control-label">资源类型：</label>
+                    <div class="controls ">
+                        <select name="rsTypeCd" class="input" id="">
+                            <option>请选择</option>
+                            <option>优惠券</option>
+                            <option>实物</option>
+                            <option>虚拟物品</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <!--可以是优惠券,商品名(不可改变),虚拟商品名-->
+                    <label class="control-label">资源名称：</label>
+                    <div class="controls ">
+                        <select name="rsNm" class="input" id=""></select>
+                    </div>
+                </div>
+                <!--选优惠券显示-->
+                <div id="type_coupon">
+                    <div class="control-group">
+                        <label class="control-label">优惠券名称：</label>
+                        <div class="controls">
+                            <input class="concPrsnName input" type="text"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">优惠券面额：</label>
+                        <div class="controls">
+                            <input class="concPrsnName input" name="coupnFcvalAmt" type="text"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">有效期：</label>
+                        <div class="controls mr-15" style="width: 100px">
+                            <input name="bgnValidTime" class="input" type="text" value="2016-10-20 00:00:00">
+                        </div>
+                        <span>至</span>
+                        <div class="controls" style="width: 100px">
+                            <input name="endValidTime" class="input" type="text" value="2016-10-26 23:59:59">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">发放方式：</label>
+                        <div class="controls ">
+                            <select name="giveModeCd" class="input" id="">
+                                <option>系统发放</option>
+                                <option>人工发放</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">导入总数：</label>
+                        <div class="controls ">
+                            <select name="" class="input" id=""></select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">文件导入：</label>
+                        <div>
+                            <button type="button" class="btn btn-blue ml-15">导入</button>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <div >
+                            <a class="text-change-orange ml-15" href="#">下载优惠券模板</a>
+                            <p class="mt-10" style="margin-left: 150px;">通过下载“下载模板“获取excel表格，可支持多个文件导入，每个文件不大于10M</p>
+                        </div>
+                    </div>
+                </div>
+                <!--选择实物时出现,并默认选择是,是会出现商品选择,否不会-->
+                <div id="type_merc">
+                    <div class="control-group">
+                        <label class="control-label">是否为商品：</label>
+                        <!--是实物商品的标识: isMcds 为1-->
+                        <div>
+                            <label class="control-content shopCategoryNm" for="yes">
+                                <input  class="ml-15" id="yes" name="select_merc" type="radio"/>
+                            是</label>
+                            <label class="control-content shopCategoryNm"  for="no">
+                                <input  class="ml-15" id="no" name="select_merc" type="radio"/>
+                            否</label>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">商品选择：</label>
+                        <div class="pt-5">
+                            <a class="text-change-orange ml-15" href="#">请选择商品</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">资源图片：</label>
+                    <div>
+                        <button type="button" class="btn btn-blue ml-15">上传图片</button>
+                        <input style="border:0;" name="rsPicPath" value="21312"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">资源描述：</label>
+                    <div class="controls "  style="width:380px">
+                        <textarea name="rsDesc" style="height:80px"></textarea>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"></label>
+                    <div>
+                        <button type="button" class="btn btn-blue ml-15">确定</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

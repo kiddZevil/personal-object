@@ -1,0 +1,14 @@
+{
+  "busiCode": null,
+  "opId": null,
+  "phone": null,
+  "returnCode": "0",
+  "returnMessage": null,
+  "bean": {
+    "shopId": "1"
+  },
+  "beans": [
+
+  ],
+  "object": null
+}

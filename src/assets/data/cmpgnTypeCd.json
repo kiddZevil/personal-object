@@ -1,0 +1,61 @@
+
+{
+  "object": [
+    {
+      "name": "团购",
+      "cmpgnTypeCd": "01",
+      "skipUrl": "js/workflow/activity/groupbuy/groupbuy"
+    }
+    ,{
+      "name": "秒杀",
+      "cmpgnTypeCd": "02",
+      "skipUrl": "js/workflow/activity/seckill/seckill"
+    }
+  ,{
+      "name": "抽奖",
+      "cmpgnTypeCd": "03",
+      "skipUrl": "js/workflow/activity/luckdraw/luckdraw",
+      "cType":[
+        {
+          "name": "大转盘",
+          "cmpgnChildTypeCd": "0301",
+          "skipUrl": "js/workflow/activity/luckdraw/luckdraw"
+        }
+        ,{
+          "name": "刮刮卡",
+          "cmpgnChildTypeCd": "0302",
+          "skipUrl": "js/workflow/activity/luckdraw/luckdraw"
+        }
+      ]
+    }
+  ,{
+      "name": "签到",
+      "cmpgnTypeCd": "04",
+      "skipUrl": "js/workflow/activity/signIn/signIn"
+    }
+  ,{
+      "name": "宣传",
+      "cmpgnTypeCd": "05",
+      "skipUrl": "js/workflow/activity/propagate/propagate"
+    }
+  ,{
+      "name": "互动",
+      "cmpgnTypeCd": "06",
+      "skipUrl": "js/workflow/activity/games/games",
+      "cType":[
+        {
+          "name": "跳高",
+          "cmpgnChildTypeCd": "0601",
+          "skipUrl": "js/workflow/activity/games/games"
+        }
+        ,{
+          "name": "疯狂气球",
+          "cmpgnChildTypeCd": "0602",
+          "skipUrl": "js/workflow/activity/games/games"
+        }
+      ]
+    }
+  ],
+  "returnCode": "0",
+  "returnMessage": null
+}

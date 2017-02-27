@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>IconFont</title>
+    <link rel="stylesheet" href="../iconfont.css">
+    <style>
+        .clearfix::before, .clearfix::after {
+            content: "";
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+        .fn-left,.fn-right {display:inline;}
+        .fn-left {float:left;}
+        .fn-right {float:right;}
+        .warp{padding: 20px;}
+        .warp-item{margin:0 5px 5px 0;background-color: #f9f9f9;width:105px;height: 115px; padding: 10px;cursor:pointer}
+        .warp-item:hover{background: #6f5499;color: #fff}
+        .warp p{margin:0;padding:0;text-align: center;}
+        .warp p .icon{ font-weight: 400;line-height: 1;font-size: 30px;padding: 10px 0}
+    </style>
+</head>
+<body>
+{{content}}
+</body>
+</html>

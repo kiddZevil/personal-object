@@ -1,0 +1,93 @@
+
+{
+  "beans": [
+    {
+      "name": "营销工具",
+      "flag": "创建活动",
+      "secondMenu":[
+        {
+          "type": "01",
+          "name": "团购",
+          "icon": "团",
+          "des":"办理统一团购方案",
+          "url":"js/workflow/activity/groupbuy/groupbuy"
+        }
+      ,{
+          "type": "02",
+          "name": "秒杀",
+          "icon": "秒",
+          "des":"办理统一秒杀方案",
+          "url":"js/workflow/activity/seckill/seckill"
+        }
+        ,{
+          "type": "04",
+          "name": "签到",
+          "icon": "签",
+          "des":"办理统一签到方案",
+          "url":"js/workflow/activity/signIn/signIn"
+        }
+        ,{
+          "type": "05",
+          "name": "宣传",
+          "icon": "宣",
+          "des":"办理统一宣传方案",
+          "url":"js/workflow/activity/propagate/propagate"
+        }
+      ]
+    }
+
+
+
+  ,{
+      "name": "互动营销",
+      "flag": "创建活动",
+      "secondMenu":[
+        {
+          "type": "03",
+          "name": "抽奖",
+          "icon": "抽",
+          "des":"办理统一抽奖方案",
+          "url":"js/workflow/activity/luckdraw/luckdraw"
+        },{
+          "type": "03",
+          "cType": "0301",
+          "lv": "2",
+          "class": "dzp",
+          "name": "大转盘",
+          "icon": "转",
+          "des":"办理统一抽奖方案",
+          "url":"js/workflow/activity/luckdraw/luckdraw"
+        },{
+          "type": "03",
+          "cType": "0302",
+          "lv": "2",
+          "class": "ggk",
+          "name": "刮刮卡",
+          "icon": "刮",
+          "des":"办理统一抽奖方案",
+          "url":"js/workflow/activity/luckdraw/luckdraw"
+        },{
+          "type": "06",
+          "cType": "0601",
+          "lv": "2",
+          "class": "tg0601",
+          "name": "跳高",
+          "icon": "互",
+          "des":"办理统一游戏方案",
+          "url":"js/workflow/activity/games/games"
+        },{
+          "type": "06",
+          "cType": "0602",
+          "lv": "2",
+          "class": "fkqq0602",
+          "name": "疯狂气球",
+          "icon": "互",
+          "des":"办理统一游戏方案",
+          "url":"js/workflow/activity/games/games"
+        }
+      ]
+    }
+  ],
+  "returnCode": "0",
+  "returnMessage": null
+}

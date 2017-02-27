@@ -1,0 +1,140 @@
+{
+  "returnCode":"0",
+  "returnMessage":"success",
+  "bean":{
+  "total": 11
+  },
+  "beans":[{
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a2",
+    "cmpgnId":"28973234232",
+    "cmpgnNm":"打出血2",
+    "cmpgnTypeCd":"20981",
+    "CMPGN_TYPE":"送奖品",
+    "rsId":"2",
+    "rsNm":"猪头肉",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-26-08 25:33:21"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }, {
+    "rsGiveId":"a1",
+    "cmpgnId":"28973432324",
+    "cmpgnNm":"打出血",
+    "cmpgnTypeCd":"2098",
+    "CMPGN_TYPE":"送优惠",
+    "rsId":"1",
+    "rsNm":"华为 P7111",
+    "rsType":"实物",
+    "prchsMobnum":"12123213",
+    "ntcSts":"是",
+    "crtTime":"2016-06-08 12:33:22"
+  }]
+}

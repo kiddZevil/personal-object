@@ -1,0 +1,11 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+    "cmpgnUrlAddr":"http://www.baidu.com"
+  },
+  "beans":[{
+  }
+  ],
+  "object":null
+}

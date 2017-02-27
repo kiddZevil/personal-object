@@ -1,0 +1,109 @@
+{
+  "returnCode":"0",
+  "rtnMsg":"成功",
+  "bean":{
+    "cmpgnId":"201610261212104567",
+    "cmpgnNm":"活动名称",
+    "cmpgnTypeCd":"01",
+    "cmpgnStsCd":"01",
+    "strtupStsCd":"01",
+    "bgnValidTime":"2016-10-26 00:00:00",
+    "endValidTime":"2016-10-30 23:59:59",
+    "cmpgnDesc":"营销活动描述",
+    "tmpltId":"20161026121556121",
+    "cmpgnRuleCntt":"活动规则"
+  },
+  "beans":[
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称1",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"10000.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    },
+    {
+      "mcdsId":"201610261212104567",
+      "mcdsNm":"商品名称2",
+      "bgnTime":"2016-10-26 00:00:00",
+      "finishTime":"2016-10-30 23:59:59",
+      "origUprc":"1.00",
+      "pmtUprc":"0.1",
+      "rsPicPath":"src/assets/img/phone.png"
+    }
+  ],
+  "object":null
+}

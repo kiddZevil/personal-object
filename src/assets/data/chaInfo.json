@@ -1,0 +1,18 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+    "mktgChnlId":"01",
+    "mktgChnlNm":"厂商",
+    "chnlRspderNm":"章程",
+    "chnlRspderTelnum":"18335642452",
+    "validStsCd":"1",
+    "crtUserId":"dsdf56767",
+    "crtUserNm":"宋金",
+    "crtTime":"2015-02-20"
+  },
+  "beans":[{
+
+  }
+  ]
+}

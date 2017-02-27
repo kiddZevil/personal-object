@@ -1,0 +1,12 @@
+{
+  "returnCode":"0",
+  "rtnMsg":"成功",
+  "bean":{
+    "dateArray":[4, 6]
+
+  },
+  "beans":[{
+  }
+  ],
+  "object":null
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/tablepay.css">
+    <link rel="stylesheet" href="../../assets/css/yuanyan.css">
+    <link rel="stylesheet" href="../../assets/css/zg.css">
+</head>
+<body>
+<!--title begin-->
+<div class="con-title">
+    <p><a href="###">权限管理</a><span>&nbsp;&gt;&nbsp;新建账号</span></p>
+</div>
+<!--title end-->
+<!--右侧主体内容begin-->
+<div class="wrap_right_con">
+    <div class="all_order right-edit">
+        <form class="form-horizontal">
+            <!--账号 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    账号:
+                </div>
+                <div class="controls">
+                    <input class="account-name" type="text" name="account" placeholder="请输入账号，4-20个字符组成">
+
+                </div>
+                <div id="J-account-name_wrapper" class="error-tips fn-hide mt-15">
+                    <p id="J-account-name" class="error">账号不能为空</p>
+                </div>
+            </div>
+            <!--账号  end-->
+
+            <!--归属渠道 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    归属渠道:
+                </div>
+                <div class="controls">
+                    <select name="channel" class="channel-select" >
+                        <option value="-1">请选择</option>
+                        <option value="00">85电商</option>
+                        <option value="01">厂商</option>
+                        <option value="02">微信</option>
+                    </select>
+
+                </div>
+                <div id="J-channel_wrapper" class="error-tips fn-hide mt-15">
+                    <p id="J-channel" class="error">请选择归属渠道</p>
+                </div>
+            </div>
+            <!--归属渠道  end-->
+
+            <!--密码 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    密码:
+                </div>
+                <div class="controls">
+                    <input class="accPassword" type="password" placeholder="8-20位数字及字母组成">
+
+                </div>
+                <div id="J-password_wrapper" class="error-tips fn-hide mt-15">
+                    <p id="J-password" class="error">请输入8-20位数字和字母组成的密码</p>
+                </div>
+            </div>
+            <!--密码  end-->
+
+            <!--确认密码 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    确认密码:
+                </div>
+                <div class="controls">
+                    <input class="rePassword" type="password" placeholder="再输一次密码" >
+                </div>
+                <div id="J-rePassword_wrapper" class="error-tips fn-hide mt-15">
+                    <p id="J-rePassword" class="error">两次输入的密码必须一致</p>
+
+                </div>
+            </div>
+            <!--确认密码  end-->
+
+            <!--角色 beg-->
+            <div class="control-group">
+                <div class="control-label">
+                    <em class="con-required">*</em>
+                    角色:
+                </div>
+                <div class="controls">
+                    <select name="roles" class="role-select">
+                        <option value="-1">请选择</option>
+                        <option value="00">系统管理员</option>
+                        <option value="01">渠道管理员</option>
+                        <option value="01">系统运营人员</option>
+                        <option value="03">渠道运营人员</option>
+                    </select>
+
+                </div>
+                <div id="J-roles_wrapper" class="error-tips fn-hide mt-15">
+                    <p id="J-roles" class="error">请选择角色</p>
+                </div>
+            </div>
+            <!--角色  end-->
+
+        </form>
+        <div class="btn-box">
+            <a href="javascript:;" class="btn btn-blue" id="submit-btn">确定提交</a>
+            <a href="javascript:;" class="btn" id="cancel-submit">取消</a>
+        </div>
+    </div>
+</div>
+<!--右侧主体内容end-->
+</body>
+</html>

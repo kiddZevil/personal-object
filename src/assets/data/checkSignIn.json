@@ -1,0 +1,48 @@
+{
+  "returnCode": "0",
+  "rtnMsg": "成功",
+  "bean": {
+    "cmpgnId": "2016102612121045666",
+    "cmpgnNm": "活动名称1",
+    "cmpgnTypeCd": "01",
+    "cmpgnStsCd": "01",
+    "strtupStsCd": "01",
+    "bgnValidTime": "2016-10-26 00:00:00",
+    "endValidTime": "2016-10-30 23:59:59",
+    "cmpgnDesc": "营销活动描述111",
+    "tmpltId": "20161026121556121",
+    "cmpgnRuleCntt": "活动规则111"
+  },
+  "beans": [
+    {
+      "signdTypeCd":"连续签到",
+      "signdDayCnt":"签到天数",
+      "cmpgnRsId":"营销活动资源ID(添加商品)",
+      "takeLmtTypeCd":"领取限制类型代码(每天/总共)",
+      "takeLmtQty":"领取限制数量"
+    }
+  , {
+      "signdTypeCd":"连续签到",
+      "signdDayCnt":"签到天数",
+      "cmpgnRsId":"营销活动资源ID(添加商品)",
+      "takeLmtTypeCd":"领取限制类型代码(每天/总共)",
+      "takeLmtQty":"领取限制数量"
+    }
+  , {
+      "signdTypeCd":"连续签到",
+      "signdDayCnt":"签到天数",
+      "cmpgnRsId":"营销活动资源ID(添加商品)",
+      "takeLmtTypeCd":"领取限制类型代码(每天/总共)",
+      "takeLmtQty":"领取限制数量"
+    }
+    , {
+      "signdTypeCd":"连续签到",
+      "signdDayCnt":"签到天数",
+      "cmpgnRsId":"营销活动资源ID(添加商品)",
+      "takeLmtTypeCd":"领取限制类型代码(每天/总共)",
+      "takeLmtQty":"领取限制数量"
+    }
+
+  ],
+  "object": null
+}

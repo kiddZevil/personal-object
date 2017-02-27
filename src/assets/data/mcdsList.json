@@ -1,0 +1,28 @@
+{
+  "returnCode":"0",
+  "returnMessage":"success",
+  "bean":{
+  "total": 4,
+  "chnlId":"用户渠道id",
+  "chnlNm":"用户渠道名称"
+  },
+  "beans":[{
+    "mcdsId":"商品编码",
+    "mrctId":"店铺ID",
+    "mcdsNm":"商品名称",
+    "mrctNm":"店铺名称",
+    "prodUprc":"价格",
+    "srcSysId":"来源系统ID",
+    "bigType":"类型",
+    "smallType":"类目"
+  }, {
+    "mcdsId":"商品编码",
+    "mrctId":"店铺ID",
+    "mcdsNm":"商品名称",
+    "mrctNm":"店铺名称",
+    "prodUprc":"价格",
+    "srcSysId":"来源系统ID",
+    "bigType":"类型",
+    "smallType":"类目"
+  }]
+}

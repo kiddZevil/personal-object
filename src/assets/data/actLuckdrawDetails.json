@@ -1,0 +1,110 @@
+{
+  "busiCode": null,
+  "opId": null,
+  "phone": null,
+  "returnCode": "0",
+  "returnMessage": null,
+  "bean": {
+    "cmpgnRuleCntt": "元旦大促销",
+    "cmpgnNm": "元旦大促销活动,元旦大促销活动,元旦大促销活动,元旦大促销活动.",
+    "przdrwTmsCnt": "100",
+    "bgnValidTime": "2016-11-25 00:00:00",
+    "rwdPrzdrwChancFlag": "1",
+    "tmpltId": "M00003",
+    "cmpgnDesc": "测试抽奖抽奖图片",
+    "cmpgnId": "20161125153805867148",
+    "endValidTime": "2016-11-26 00:00:00",
+    "przdrwTmsCntTypeCd": "01",
+    "crtUserId": "U000000000000001",
+    "ftpUrl": "http://192.168.100.4:20500"
+  },
+  "beans": [],
+  "object": [
+    {
+      "bean": {
+        "przdrwPrzitmId": "20161125154935862260",
+        "lvlCd": "01",
+        "lvlNm": "一等奖1",
+        "prizeCnspQty": "0",
+        "prizePreprQty": "2",
+        "przitmPicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251542000022.jpg",
+        "winprzRate": "1.00",
+        "prizeItemQty": "2"
+      },
+      "beans": [
+        {
+          "cmpgnRsId": "2016111617435552836",
+          "rsNm": "Apple/苹果 iPhone 7s",
+          "prizePreprQty": "1",
+          "prizePicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251536000008.jpg"
+        },
+        {
+          "cmpgnRsId": "2016111617444488437",
+          "rsNm": "Apple/苹果 iPhone 8s",
+          "prizePreprQty": "1",
+          "prizePicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251536000018.jpg"
+        }
+      ]
+    },
+    {
+      "bean": {
+        "przdrwPrzitmId": "20161125154935867261",
+        "lvlCd": "02",
+        "lvlNm": "二等奖2",
+        "prizeCnspQty": "0",
+        "prizePreprQty": "2",
+        "przitmPicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251547000046.jpg",
+        "winprzRate": "2.00",
+        "prizeItemQty": "2"
+      },
+      "beans": [
+        {
+          "cmpgnRsId": "2016111617444488437",
+          "rsNm": "Apple/苹果 iPhone 8s",
+          "prizePreprQty": "2",
+          "prizePicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251536000043.jpg"
+        }
+      ]
+    },
+    {
+      "bean": {
+        "przdrwPrzitmId": "20161125154935872262",
+        "lvlCd": "03",
+        "lvlNm": "三等奖3",
+        "prizeCnspQty": "0",
+        "prizePreprQty": "3",
+        "przitmPicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251548000000.jpg",
+        "winprzRate": "3.00",
+        "prizeItemQty": "3"
+      },
+      "beans": [
+        {
+          "cmpgnRsId": "2016111617435552836",
+          "rsNm": "Apple/苹果 iPhone 7s",
+          "prizePreprQty": "3",
+          "prizePicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251537000027.jpg"
+        }
+      ]
+    },
+    {
+      "bean": {
+        "przdrwPrzitmId": "20161125154935877263",
+        "lvlCd": "04",
+        "lvlNm": "444",
+        "prizeCnspQty": "0",
+        "prizePreprQty": "4",
+        "przitmPicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251549000010.jpg",
+        "winprzRate": "4.00",
+        "prizeItemQty": "4"
+      },
+      "beans": [
+        {
+          "cmpgnRsId": "2016111617444488437",
+          "rsNm": "Apple/苹果 iPhone 8s",
+          "prizePreprQty": "4",
+          "prizePicUrlAddr": "/busisystem/mamp/cmpgn/img/201611251549000020.jpg"
+        }
+      ]
+    }
+  ]
+}

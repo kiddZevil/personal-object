@@ -1,0 +1,40 @@
+{
+  "returnCode":"0",
+  "returnMessage":"success",
+  "bean":{
+  "total": 2
+  },
+  "beans":[{
+    "mcds_unit_id":"28973432324",
+    "mcds_unit_nm":"华为 P7111",
+    "mcds_price":"2098",
+    "mcds_pic_url":"src/assets/images/55f0e80aN532efcae.jpg",
+    "mcds_sku_qty":"1",
+    "refer_price":"7120.00",
+    "cpu_model":"A8x",
+    "createOrderTime":"2016-06-08 12:33:22",
+    "mchn_memry":"32G",
+    "scr_size":"5.7英寸",
+    "b_camera":"800万像素",
+    "f_camera":"300万像素",
+    "payType":"支付宝",
+    "orderStatus":"已收货",
+    "wait_time":"250小时"
+  }, {
+    "mcds_unit_id":"12899232234324",
+    "mcds_unit_nm":"HTC One M8sd",
+    "mcds_price":"2098",
+    "mcds_pic_url":"src/assets/images/55f0e80aN532efcae.jpg",
+    "mcds_sku_qty":"1393",
+    "refer_price":"7120.00",
+    "cpu_model":"A8x",
+   "createOrderTime":"2016-06-08 12:33:22",
+    "mchn_memry":"32G",
+    "scr_size":"5.7英寸",
+    "b_camera":"800万像素",
+    "f_camera":"300万像素",
+    "payType":"支付宝",
+    "orderStatus":"已收货",
+    "wait_time":"250小时"}
+  ]
+}

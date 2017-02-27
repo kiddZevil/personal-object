@@ -1,0 +1,15 @@
+{
+  "returnCode":"0",
+  "rtnMsg":"成功",
+  "bean":{
+    "dateArray":[4, 6],
+    "timeStar":"2016年12月22日",
+    "timeEnd":"2016年12月52日",
+    "flag":false
+
+  },
+  "beans":[{
+  }
+  ],
+  "object":null
+}

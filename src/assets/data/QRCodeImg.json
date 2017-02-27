@@ -1,0 +1,11 @@
+{
+  "returnCode":"0",
+  "returnMessage":"成功",
+  "bean":{
+    "srcUrl":"src/assets/img/QRcode.jpg"
+  },
+  "beans":[{
+  }
+  ],
+  "object":null
+}

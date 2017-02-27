@@ -1,0 +1,76 @@
+{
+  "returnCode":"0",
+  "returnMessage":null,
+  "bean":{
+    "total":"5"
+  },
+  "beans":"",
+  "object":[
+    {
+      "cmpgnRsId": "2016110815124576814",
+      "mcdsId": "02",
+      "preprQty": "200",
+      "mktgChnlId": "1",
+      "rsNm": "rsNm",
+      "cmpnTotal": 1,
+      "crtTime": "2016-11-08 15:11:22.0",
+      "cmpnList": [
+        {
+          "cmpgnRsId": "2016110815124576814",
+          "preprQty": "20000",
+          "componUprc": "10.00",
+          "rsComponId": "201611081512459892",
+          "componDesc": "componDesc",
+          "componNm": "componNm"
+        }
+      ],
+      "rsTypeCd": "01",
+      "prodUprc": "10.00"
+    },
+    {
+      "cmpgnRsId": "2016110815402148717",
+      "mcdsId": "02",
+      "preprQty": "100",
+      "mktgChnlId": "1",
+      "rsNm": "rsNm",
+      "cmpnTotal": 4,
+      "crtTime": "2016-11-08 15:38:58.0",
+      "cmpnList": [
+        {
+          "cmpgnRsId": "2016110815402148717",
+          "preprQty": "100",
+          "componUprc": "10.00",
+          "rsComponId": "201611081540217545",
+          "componDesc": "componDesc",
+          "componNm": "componNm"
+        },
+        {
+          "cmpgnRsId": "2016110815402148717",
+          "preprQty": "100",
+          "componUprc": "10.00",
+          "rsComponId": "201611081540217626",
+          "componDesc": "componDesc",
+          "componNm": "componNm"
+        },
+        {
+          "cmpgnRsId": "2016110815402148717",
+          "preprQty": "100",
+          "componUprc": "10.00",
+          "rsComponId": "201611081540217677",
+          "componDesc": "componDesc",
+          "componNm": "componNm"
+        },
+        {
+          "cmpgnRsId": "2016110815402148717",
+          "preprQty": "100",
+          "componUprc": "10.00",
+          "rsComponId": "201611081540217677",
+          "componDesc": "componDesc",
+          "componNm": "componNm"
+        }
+      ],
+      "rsTypeCd": "01",
+      "prodUprc": "10.00"
+    }
+  ]
+}

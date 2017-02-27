@@ -1,0 +1,91 @@
+{
+  "returnCode":"0",
+  "returnMessage":null,
+  "bean":{
+    "total":"5"
+  },
+  "object":"",
+  "beans":[
+    {
+      "cmpgnRsId":"12548597589", //商品ID
+      "rsNm":"红米 NOTE1 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597599", //商品ID
+      "rsNm":"红米 NOTE2 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597559", //商品ID
+      "rsNm":"红米 NOTE3 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597529", //商品ID
+      "rsNm":"红米 NOTE4 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597519", //商品ID
+      "rsNm":"红米 NOTE5 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597519", //商品ID
+      "rsNm":"红米 NOTE5 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597519", //商品ID
+      "rsNm":"红米 NOTE5 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597519", //商品ID
+      "rsNm":"红米 NOTE5 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597519", //商品ID
+      "rsNm":"红米 NOTE5 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+  ,{
+      "cmpgnRsId":"12548597519", //商品ID
+      "rsNm":"红米 NOTE5 高配网通版 3GB+32GB 金色4G手机 双卡双待",
+      "prodUprc":"500",
+      "rsPicPath":"src/assets/img/phone.png",
+      "crtTime":"2016-12-12",
+      "preprQty":"50"
+    }
+
+  ]
+}
