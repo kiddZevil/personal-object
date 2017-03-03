@@ -21,26 +21,7 @@
                 <tr data-id="{{cmpgnId}}" data-type="{{cmpgnTypeCd}}" data-btime="{{bgnValidTime}}" data-etime="{{endValidTime}}">
                     <td class="td-show-more">{{cmpgnId}}</td>
                     <td class="fn-txt-left td-show-more">{{cmpgnNm}}</td>
-                    <td>
-                        {{#expression cmpgnTypeCd '==' "01" }}
-                            团购
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "02" }}
-                            秒杀
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "03" }}
-                            抽奖
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "04" }}
-                            签到
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "05" }}
-                            宣传
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "06" }}
-                            互动
-                        {{/expression}}
-                    </td>
+                    <td>{{cmpgnTypeCdNm}}</td>
                     <td class="td-show-more" title="{{bgnValidTime}} - {{endValidTime}}">{{bgnValidTime}} - {{endValidTime}}</td>
                     <td class="tag-status">
                         {{#expression cmpgnStsCd '==' "04" }}

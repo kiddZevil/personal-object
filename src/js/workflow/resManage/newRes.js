@@ -70,6 +70,10 @@ define(['Util','date','upload','text!module/workflow/resManage/newRes.tpl',
            /* $el.on('click','#G-choose',dialogMcdsChose);*/
        
             $el.on('click','#G-choose', function () {
+                if($('#userInfo_chnlId').val() == '1111'){
+                    Util.dialog.tips('该用户无法选择商品');
+                    return
+                }
                 //获取资源列表
                     /*var _this = $(this).parents('.sign-rule-box'),
                         _thisId = _this.attr('id'),

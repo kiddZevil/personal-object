@@ -121,7 +121,7 @@
                 Util.ajax.postJsonAsync(url+"&cmpgnId=" + cmpgnId,'',function(json,status){
                     if(status) {
                         var bean = json.bean;
-                        $('title').text(bean.cmpgnNm + '-云营销'); //网页标题
+                        $('title').text(bean.cmpgnNm); //网页标题
                         $('input[name="chnlId"]').val(bean.chnlId);
                         givprzType = bean.givprzTypeCd; //活动类型
                         getScore = bean.gameScore;
@@ -139,6 +139,9 @@
                     };
                     Util.ajax.postJsonAsync(saveUrl,param,function(json,status){
                         if(status){
+                            window.sessionStorage.removeItem('gameScore');
+                            window.sessionStorage.removeItem('bgnGameTime');
+                            window.sessionStorage.removeItem('endGameTime');
                             Util.layer.tips('分数保存成功',2);
                             Util.layer.close(loading);
                         }else{

@@ -36,7 +36,8 @@ define(['Util','text!module/index/side.tpl','text!module/index/side_second.tpl',
                         if (status) {
                             _this.$el.find(".J_hover_userInfoBox").html(Util.hdb.compile(userTpl)(json.bean));
                             _this.$el.find('.userInfo_name').html(json.bean.userAls);
-                            _this.$el.find('#userInfo_hid').val(json.bean.userNm)
+                            _this.$el.find('#userInfo_hid').val(json.bean.userNm);
+                            _this.$el.find('#userInfo_chnlId').val(json.bean.chnlId);
                         }
                     });
                     //侧边栏滚动条样式美化

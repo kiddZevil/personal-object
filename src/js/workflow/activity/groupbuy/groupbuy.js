@@ -19,9 +19,11 @@ define(['Util'
             ,_indexModule = null
             ,_param
             ,selRes = []
-            ,nextIndex; //是否点击下一步
+            ,nextIndex //是否点击下一步
+            ,disChildren; //是否显示子类型
 		initialize = function(indexModule, param){
             $el = $(activityTpl);
+            disChildren = false;
             nextIndex = 0;
             _indexModule = indexModule;
             _param = param;
@@ -29,20 +31,35 @@ define(['Util'
             $('#G-activityEdit',$el).html('');
             //重构页面DOM节点
             $('#G-activityEdit',$el).html($(stepOneTpl)).append($(groupbuyStepTwoTpl)).append($(stepThreeTpl));
-            //显示类型二级联动下拉
-            selTool({
-                pEl: $('#G-selActPatBox',$el), // 一级插入
-                cEl: $('#G-selActChnBox',$el), // 二级插入
-                pType: _param.param.activityType,
-                disFlag: _param.param.newFlag
-            });
             stepInt();
             if(_param.param.editFlag == '0'){
+                if(!_param.param.cType){
+                    disChildren = true
+                }
+                selTool({
+                    pEl: $('#G-selActPatBox',$el), // 一级插入
+                    cEl: $('#G-selActChnBox',$el), // 二级插入
+                    pType: _param.param.activityType,
+                    disFlag: _param.param.newFlag,
+                    disChildren: disChildren, //是否显示活动子类型
+                    cType: _param.param.cType
+                });
                 //给页面title添加标题
                 $('#G-activityTit',$el).html(_param.param.activityTit);
                 $('#G-back-parent',$el).html(_param.param.backTit);
                 loadEditActData();
             }else{
+                if(!_param.param.cType){
+                    disChildren = true
+                }
+                selTool({
+                    pEl: $('#G-selActPatBox',$el), // 一级插入
+                    cEl: $('#G-selActChnBox',$el), // 二级插入
+                    pType: _param.param.activityType,
+                    disFlag: _param.param.newFlag,
+                    disChildren: disChildren, //是否显示活动子类型
+                    cType: _param.param.cType
+                });
                 //给页面title添加标题
                 $('#G-activityTit',$el).html(_param.param.activityTit);
                 $('#G-back-parent',$el).html(_param.param.backTit);
@@ -50,10 +67,6 @@ define(['Util'
                 $('input[name="cmpgnTypeCd"]',$el).val(_param.param.activityType);
                 //增加创建人信息
                 $('input[name="founder"]',$el).val($('#userInfo_hid').val());
-                tmpTpl({
-                    el:$("#tempList90",$el),
-                    type:$('input[name="cmpgnTypeCd"]',$el).val()
-                });
             }
             //打开步骤二
             $el.on('click','#G-stepOneNext',goStepTwo);
@@ -98,11 +111,6 @@ define(['Util'
             });
         };
         var stepInt = function(){
-            /*$('#G-selAct',$el).val(_param.param.activityType);
-             if(_param.param.newFlag != '1'){
-             $('#G-selAct',$el).attr('disabled','disabled');
-             }*/
-
             if(_param.param.newFlag == '1' && !!_param.param.stepOneData){    // 如果当前创建为可选活动类型并是否有第一步骤数据
                 var oneData = JSON.parse(decodeURIComponent(_param.param.stepOneData));
                 $('input[name="cmpgnNm"]',$el).val(oneData.cmpgnNm);                   //活动名称
@@ -149,7 +157,25 @@ define(['Util'
             }
             //判断当前选择的活动类型是否是当前活动，如果不是提示将请清空第二部所填数据
             //newFalg 0:当前页面不可选择活动类型  1：当前页面可选活动类型
-            var selType = $('.sel-ptool',$el).val();
+            var selType = $('.sel-ptool').val();
+            ($('.sel-ctool').val() == '0102') && $('.hidePrice').hide();
+            if(_param.param.editFlag == '1'){   //新增活动的时候下一步在执行查找模版
+                //获取模版列表
+                if(!_param.param.cType){ //如果是从一级菜单打开
+                    tmpTpl({
+                        el:$("#tempList90",$el),
+                        type:_param.param.activityType,
+                        cType: $('.sel-ctool').val()
+                    });
+                }else{ //选择子类创建
+                    tmpTpl({
+                        el:$("#tempList90",$el),
+                        type:_param.param.activityType,
+                        cType: $('.sel-ctool').val()
+                    });
+
+                }
+            }
             if(selType != _param.param.activityType && _param.param.newFlag == '1'){
                 if(nextIndex > 0){
                     Util.dialog.openDiv({
@@ -374,8 +400,9 @@ define(['Util'
                     }
                 });
                 var bgnValidTime = $('input[name="bgnValidTime"]',$el).val()
-                    ,endValidTime = $('input[name="endValidTime"]',$el).val();
-                Util.ajax.loadTemp($('#G-actTable'),actTableTpl,{"beans":selRes,"bTime":bgnValidTime,"eTime":endValidTime},true);
+                    ,endValidTime = $('input[name="endValidTime"]',$el).val()
+                    ,hideFlag = $('.sel-ctool').val() == '0102' ? '01' : '';
+                Util.ajax.loadTemp($('#G-actTable'),actTableTpl,{"beans":selRes,"bTime":bgnValidTime,"eTime":endValidTime,"hidePriceFlag":hideFlag},true);
                 if($('#G-actTable',$el).html() != ''){
                     $('#G-resTip',$el).hide();
                 }
@@ -515,16 +542,25 @@ define(['Util'
                     //步骤二数据
                     $('input[name="cmpgnStsCd"]',$el).val(bean.cmpgnStsCd);             //活动状态
                     $('textarea[name="cmpgnRuleCntt"]',$el).val(bean.cmpgnRuleCntt);   //活动规则
-                    $('input[name="tmpltId"]',$el).val(bean.tmpltId);                   //模版ID
+                    $('input[name="tmpltId"]',$el).val(bean.tmpltId)                   //模版ID
+                    ,hideFlag = $('.sel-ctool').val() == '0102' ? '01' : '';
                     //活动资源
-                    Util.ajax.loadTemp($('#G-actTable'),actTableTpl,{"flag":"true","beans":beans,"imgUrl":bean.ftpUrl});
+                    Util.ajax.loadTemp($('#G-actTable'),actTableTpl,{"flag":"true","beans":beans,"imgUrl":bean.ftpUrl,"hidePriceFlag":hideFlag});
                     //获取模版列表
                     tmpTpl({
                         el:$("#tempList90",$el),
                         type:$('input[name="cmpgnTypeCd"]',$el).val(),
+                        cType: $('.sel-ctool').val(),
                         id:bean.tmpltId,
                         ftp: bean.ftpUrl,
-                        img: bean.actvBannerPicAddr
+                        img: bean.actvBannerPicAddr,
+                        selFn: function(){
+                            if($('.selected-img').data('ctypecd') == '0102'){
+                                $('.hidePrice').hide();
+                            }else {
+                                $('.hidePrice').show();
+                            }
+                        }
                     });
                     if($('#G-actTable',$el).html() != ''){
                         $('#G-resTip',$el).hide();

@@ -114,7 +114,7 @@ Draw.prototype = {
 				var bean = data.bean
 					,object = data.object
 					,ftpUrl = bean.ftpUrl;
-				$('title').text( bean.cmpgnNm + '-云营销'); //网页标题
+				$('title').text( bean.cmpgnNm); //网页标题
 				$('input[name="chnlId"]').val(bean.chnlId);
 				if(!!json.bean.actvBannerPicAddr){
 					$('.banner img').attr('src',ftpUrl + bean.actvBannerPicAddr);

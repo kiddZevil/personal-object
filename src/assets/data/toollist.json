@@ -7,7 +7,19 @@
       "secondMenu":[
         {
           "type": "01",
+          "cType": "0101",
+          "lv": "2",
           "name": "团购",
+          "icon": "团",
+          "des":"办理统一团购方案",
+          "url":"js/workflow/activity/groupbuy/groupbuy"
+        }
+      ,{
+          "type": "01",
+          "cType": "0102",
+          "lv": "2",
+          "hidePrice": true,
+          "name": "聚合宣传",
           "icon": "团",
           "des":"办理统一团购方案",
           "url":"js/workflow/activity/groupbuy/groupbuy"

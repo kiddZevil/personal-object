@@ -33,9 +33,10 @@ var groupBuy = {
                     $('.group_banner img').attr('src',json.bean.ftpUrl + json.bean.actvBannerPicAddr)
                 }
                 $('input[name="skipUrl"]').val(json.bean.detailUrl);
-                var resListTpl = '{{#if beans}} {{#each beans}}<li><div class="res-info"><div class="res-img"><img src="{{../imgUrl}}{{mcdsPic}}" width="100%"/></div><p>{{mcdsNm}}</p><p><em>￥{{pmtUprc}}</em><i>￥{{origUprc}}</i></p><a href="javascript:;" class="go-buy" data-id="{{rsId}},{{mcdsId}}">立即团购</a></div></li>        {{/each}}        {{/if}}';
-                Util.handlebars.loadTemp($('#G-groupbuyList'),resListTpl,{beans:json.beans,imgUrl: json.bean.ftpUrl});
+                var resListTpl = '{{#if beans}}            {{#each beans}}<li class="item"><a class="item-link"><div class="item-detail"><img src="{{../imgUrl}}{{mcdsPic}}" alt="{{mcdsNm}}"></div><div class="item-info"><div class="item-name ellipsis">{{mcdsNm}}</div><div class="item-price">售价：￥<i class="num">{{origUprc}}</i></div><div class="item-btns"><span class="item-btn-buy" data-id="{{rsId}},{{mcdsId}}">立即购买</span></div></div></a></li>            {{/each}}        {{/if}}';
+                Util.handlebars.loadTemp($('#G_resList'),resListTpl,{beans:json.beans,imgUrl: json.bean.ftpUrl});
                 $('#G-actDes').html(json.bean.cmpgnRuleCntt);
+                $('#G-actTime').html(json.bean.bgnValidTime +' ~ '+ json.bean.endValidTime);
                 Util.layer.close(loading);
             }else{
                 layer.closeAll();
@@ -43,7 +44,7 @@ var groupBuy = {
         });
     },
     even : function(id){
-        $('.go-buy').on('tap',function(){
+        $('.item-btn-buy').on('tap',function(){
             var chnlId = $('input[name="chnlId"]').val();
             var resinfo = $(this).data('id').split(',');
             if(Util.isLogin.login()){

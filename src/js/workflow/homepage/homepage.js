@@ -58,7 +58,7 @@ define([
                 // activityTit 活动名称
                 // stepOneDete 第一步骤数据
                 // stepTwo 0：直接显示第二步 1：显示第一步
-                param:{editFlag:'1',activityTit:'新建营销活动',activityType:'01',newFlag:'1',backTit:'活动管理'}
+                param:{editFlag:'1',activityTit:'新建营销活动',activityType:'01',newFlag:'1',backTit:'活动管理',cType:'0101'}
             });
         };
         //tab切换
@@ -243,14 +243,14 @@ define([
                         _indexModule.main.createTab({
                             title:'编辑团购营销活动',
                             url:'js/workflow/activity/groupbuy/groupbuy',
-                            param: {editFlag:'0',activityTit:'编辑团购营销活动',activityType:type,actId:actId,backTit:'活动管理'}
+                            param: {editFlag:'0',activityTit:'编辑团购营销活动',activityType:type,actId:actId,backTit:'活动管理',cType:cType}
                         });
                         break;
                     case '02':
                         _indexModule.main.createTab({
                             title:'编辑秒杀营销活动',
                             url:'js/workflow/activity/seckill/seckill',
-                            param: {editFlag:'0',activityTit:'编辑秒杀营销活动',activityType:type,actId:actId,backTit:'活动管理'}
+                            param: {editFlag:'0',activityTit:'编辑秒杀营销活动',activityType:type,actId:actId,backTit:'活动管理',cType:cType}
                         });
                         break;
                     case '03':
@@ -264,14 +264,14 @@ define([
                         _indexModule.main.createTab({
                             title:'编辑签到营销活动',
                             url:'js/workflow/activity/signIn/signIn',
-                            param: {editFlag:'0',activityTit:'编辑签到营销活动',activityType:type,actId:actId,backTit:'活动管理'}
+                            param: {editFlag:'0',activityTit:'编辑签到营销活动',activityType:type,actId:actId,backTit:'活动管理',cType:cType}
                         });
                         break;
                     case '05':
                         _indexModule.main.createTab({
                             title: '编辑宣传营销活动',
                             url: 'js/workflow/activity/propagate/propagate',
-                            param: { editFlag:'0',activityTit:'编辑宣传营销活动',activityType:type,actId:actId,backTit:'活动管理'}
+                            param: { editFlag:'0',activityTit:'编辑宣传营销活动',activityType:type,actId:actId,backTit:'活动管理',cType:cType}
                         });
                         break;
                     case '06':
@@ -354,9 +354,11 @@ define([
                     }
                 });
             }else if(operation == 'del-act'){
-                _indexModule.showDialog({
+                var contentTxt = '确认删除编号“' + actId + '”活动？';
+                Util.dialog.openDiv({
                     title:"删除活动",
-                    content:'确认删除编号“' + actId + '”活动？',
+                    content: contentTxt,
+                    modal:1,
                     width:320,
                     height:30,
                     okVal:"确定",  //确认按钮文本

@@ -9334,7 +9334,8 @@ var __extends = this.__extends || function(b, c) {
             b = this.__loadingSkin.getImage("playBtn");
             b.touchEnabled = !1;
             b.alpha = 0;
-            this.onStageResizeHandler(null)
+            this.onStageResizeHandler(null);
+            this.onTouchPlayHandler();
         };
         c.prototype.setProgress = function(b, a) {
             this.__loadingSkin.getSprite("loadingSpr").getImage("loadingBar").scrollRect.width = b / a * this.__oriLoadingBarWidhth
@@ -9393,6 +9394,7 @@ var __extends = this.__extends || function(b, c) {
                 d.addSpriteSheet("yia", a);
                 c._swf = new starlingswf.Swf(b, d, 24);
                 this._createLoadingView();
+                /*this.onTouchPlayHandler();*/
                 RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS,
                     this.onResourceProgress, this);
                 RES.loadGroup("preload")
@@ -9449,7 +9451,7 @@ var __extends = this.__extends || function(b, c) {
             b = this.__loadingSkin.getImage("logoImg");
             egret.Tween.removeTweens(b);
             this.__appTimer.stop();
-            this.__appTimer.removeEventListener(egret.TimerEvent.TIMER, this.removeSkin, this);
+            /*this.__appTimer.removeEventListener(egret.TimerEvent.TIMER, this.removeSkin, this);*/
             this.__appTimer = null;
             this.__loadingSkin && (c.stage.removeChild(this.__loadingSkin), this.__loadingSkin = null);
             b = c.swf.createImage("img_YIA_LOGO");
@@ -9810,6 +9812,7 @@ var __extends = this.__extends || function(b, c) {
             endTime = new Date().Format("yyyy-MM-dd hh:mm:ss");
             this.txt_score.text = Math.floor(b / 39) + " 分";
             this.score = b;
+            var getScore = this.score;
             b = Math.floor(this.score / 39) > 50 ? '哇塞，干的漂亮，继续努力' : '跳的越高，得分越高，继续努力';
             /*console.log(this.score)*/
             if(flag !== '0'){
@@ -9821,7 +9824,7 @@ var __extends = this.__extends || function(b, c) {
                         content : '是否登录，并保存您的游戏分数？',
                         close: false,
                         okFn : function(){
-                            sessionStorage.setItem("gameScore",Math.floor(b / 39));
+                            sessionStorage.setItem("gameScore",Math.floor(getScore / 39));
                             sessionStorage.setItem("bgnGameTime",begTime);
                             sessionStorage.setItem("endGameTime",endTime);
                             Util.act.power(chnlId);

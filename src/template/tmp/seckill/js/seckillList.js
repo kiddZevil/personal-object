@@ -40,7 +40,7 @@ $(function () {
         Util.ajax.postJson(url,{'cmpgnId':cmpgnId},function (json,status) {
             if(status){
                 if(json.returnCode == '0'){
-                    $('title').text(json.bean.cmpgnNm + '-云营销'); //网页标题
+                    $('title').text(json.bean.cmpgnNm); //网页标题
                     if(se == '0'){    //如果se为0进入秒杀列表预览页面,预览页面数据不显示规格信息
                          //将返回的商品列表数据返回到页面上，对数据进行处理
                         var data = json.beans;

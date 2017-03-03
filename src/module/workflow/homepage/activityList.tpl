@@ -26,35 +26,8 @@
                     <td class="td-show-more">{{cmpgnId}}</td>
                     <td class="fn-txt-left td-show-more">{{cmpgnNm}}</td>
                     <td>
-                        {{#expression cmpgnTypeCd '==' "01" }}
-                            团购
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "02" }}
-                            秒杀
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "03" }}
-                            抽奖 /
-                            {{#expression cmpgnChildTypeCd '==' "0302" }}
-                                刮刮卡
-                            {{else}}
-                                大转盘
-                            {{/expression}}
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "04" }}
-                            签到
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "05" }}
-                            宣传
-                        {{/expression}}
-                        {{#expression cmpgnTypeCd '==' "06" }}
-                            互动 /
-                            {{#expression cmpgnChildTypeCd '==' "0601" }}
-                                跳高
-                            {{/expression}}
-                            {{#expression cmpgnChildTypeCd '==' "0602" }}
-                                疯狂气球
-                            {{/expression}}
-                        {{/expression}}
+                        {{cmpgnTypeCdNm}}
+                        {{#if cmpgnChildTypeCdNm}} / {{cmpgnChildTypeCdNm}} {{/if}}
                     </td>
                     <td title="{{mktgChnlNm}}">{{mktgChnlNm}}</td>
                     <td class="td-show-more" title="{{bgnValidTime}} - {{endValidTime}}">{{bgnValidTime}} - {{endValidTime}}</td>

@@ -32,7 +32,16 @@ define(['Util'
             _indexModule.main.createTab({
                 title:'新建'+name+'营销活动',
                 url:url,
-                param:{editFlag:'1',activityTit:'新建'+name+'营销活动',activityType:type,newFlag:'0',backTit:'营销组件',cType:cType,actNm:name,actClass:cs}
+                param:{
+                    editFlag:'1'
+                    ,activityTit:'新建'+name+'营销活动'
+                    ,activityType:type
+                    ,newFlag:'0'
+                    ,backTit:'营销组件'
+                    ,cType:cType
+                    ,actNm:name
+                    ,actClass:cs
+                }
             });
         };
 

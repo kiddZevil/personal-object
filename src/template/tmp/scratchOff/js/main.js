@@ -235,7 +235,7 @@ Card.prototype = {
 			if(status){
 				var data = json;
 				var bean = data.bean;
-				$('title').text( bean.cmpgnNm + '-云营销'); //网页标题
+				$('title').text( bean.cmpgnNm); //网页标题
 				$('input[name="chnlId"]').val(bean.chnlId);
 				if(!!json.bean.actvBannerPicAddr){
 					$('.group_banner img').attr('src',json.bean.ftpUrl + json.bean.actvBannerPicAddr)

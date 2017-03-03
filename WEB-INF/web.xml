@@ -74,6 +74,7 @@
 				/front/sh/common!execute?uid=c003,
 				/front/sh/common!execute?uid=c004,
 				/front/sh/common!execute?uid=c005,
+				/front/sh/common!execute?uid=c006,
 				/front/sh/campaign!execute?uid=m004,
 				/src/assets/doc/coupon_tpl.xls
 			</param-value>
@@ -136,8 +137,21 @@
 		<filter-name>FreemarkerFilter</filter-name>
 		<url-pattern>*.html</url-pattern>
 	</filter-mapping>
-	
-	
+	<!-- 禁用HTTP部分请求 -->
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/*</url-pattern>
+			<http-method>PUT</http-method>
+			<http-method>DELETE</http-method>
+			<http-method>HEAD</http-method>
+			<http-method>OPTIONS</http-method>
+			<http-method>TRACE</http-method>
+		</web-resource-collection>
+		<auth-constraint></auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
 	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

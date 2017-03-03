@@ -20,7 +20,7 @@
             <td>
                 <input type="text" class="c-td-control input-small" data-cl="price" name="origUprc" value="{{origUprc}}">
             </td>
-            <td>
+            <td class="hidePrice {{#if ../hidePriceFlag}} fn-hide {{/if}}">
                 <input type="text" class="c-td-control input-small" data-cl="price" name="pmtUprc" value="{{pmtUprc}}">
             </td>
             <td>
@@ -51,8 +51,8 @@
             <td>
                 <input type="text" class="c-td-control input-small" data-cl="price" name="origUprc" value="{{prodUprc}}">
             </td>
-            <td>
-                <input type="text" class="c-td-control input-small" data-cl="price" name="pmtUprc" value="">
+            <td class="hidePrice {{#if ../hidePriceFlag}} fn-hide {{/if}}">
+                <input type="text" class="c-td-control input-small" data-cl="price" name="pmtUprc" value="{{prodUprc}}">
             </td>
             <td>
                 <a href="javascript:;" class="btn btn-link oper-delRes">删除</a>

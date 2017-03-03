@@ -32,7 +32,7 @@ function loadData(url,cmpgnId){
         var loading = Util.layer.loading(10000);
         var date =json.bean.bgnValidTime.toString().substring(0,10);
         if(status){
-            $('title').text( json.bean.cmpgnNm + '-云营销'); //网页标题
+            $('title').text( json.bean.cmpgnNm); //网页标题
             $('#campain-title').html(json.bean.cmpgnNm);
             if(!!json.bean.actvBannerPicAddr){
                 $('.group_banner img').attr('src',json.bean.ftpUrl + json.bean.actvBannerPicAddr)

@@ -13,7 +13,7 @@
                         <th width="15%">结束时间</th>
                         <th class="fn-text-left">商品</th>
                         <th width="10%">原价</th>
-                        <th width="10%">团购价</th>
+                        <th width="10%" class="hidePrice">团购价</th>
                         <th width="10%">操作</th>
                     </tr>
                 </thead>

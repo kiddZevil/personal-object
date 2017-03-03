@@ -4,7 +4,19 @@
     {
       "name": "团购",
       "cmpgnTypeCd": "01",
-      "skipUrl": "js/workflow/activity/groupbuy/groupbuy"
+      "skipUrl": "js/workflow/activity/groupbuy/groupbuy",
+      "cType":[
+        {
+          "name": "团购",
+          "cmpgnChildTypeCd": "0101",
+          "skipUrl": "js/workflow/activity/groupbuy/groupbuy"
+        }
+      ,{
+          "name": "聚合营销",
+          "cmpgnChildTypeCd": "0102",
+          "skipUrl": "js/workflow/activity/groupbuy/groupbuy"
+        }
+      ]
     }
     ,{
       "name": "秒杀",
@@ -48,7 +60,7 @@
           "cmpgnChildTypeCd": "0601",
           "skipUrl": "js/workflow/activity/games/games"
         }
-        ,{
+      ,{
           "name": "疯狂气球",
           "cmpgnChildTypeCd": "0602",
           "skipUrl": "js/workflow/activity/games/games"

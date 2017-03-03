@@ -13,6 +13,7 @@
     </div>!-->
     <div class="exit J_hover_userInfo">
         <input type="hidden" id="userInfo_hid" value="">
+        <input type="hidden" id="userInfo_chnlId" value="">
         <p class="userInfo_name" style="color:#e0e0e0">账户名</p>
         <div class="exit_div J_hover_userInfoBox" style="display: none">
 

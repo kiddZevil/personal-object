@@ -1237,7 +1237,7 @@ table{table-layout:fixed!important}
 .c-textarea-rule textarea.c-form-control{display:inline-block;width:80%;height:120px}
 .upload-tmp-banner{margin-top:25px}
 .upload-tmp-banner .control-group{position:relative;margin-bottom:25px}
-.upload-tmp-banner .control-label{font-size:14px;float:left}
+.upload-tmp-banner .control-label,.upload-bgCol .control-label{font-size:14px;float:left}
 .upload-tmp-banner .prize-change-img{opacity:1;display:none;width:20px;height:20px;line-height:20px;top:0;right:0;border-radius:50%;cursor:pointer;z-index:9}
 .upload-tmp-banner:hover .prize-change-img{display:block}
 .upload-tmp-banner .prize-add-imgbg{height:100%;line-height:100%}
