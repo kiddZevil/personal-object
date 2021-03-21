@@ -1,7 +1,7 @@
 /**
  *	@author: zhanglizhao
  *	@date: 2016-06-02
- *  这是一个 业务代码编写实例（可复制后 编写业务代码）
+ *  这是一个 业务代码编写实例（可复制后 编写业务代码）1
  */
 define(['Util','text!module/error/error.tpl'],
     function (Util,Tpl) {
